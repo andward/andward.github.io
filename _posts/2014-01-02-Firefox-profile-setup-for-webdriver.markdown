@@ -5,7 +5,7 @@ date: 2014-01-02 18:52:20
 category: Test
 ---
 
-In webdriver test for Firefox, we can setup multiple profile to handle some test requirement(eg:login with cookies)
+In webdriver test for Firefox, we can setup multiple profile to handle some requirement (eg:login with cookies)
 
 Run "firefox -P" to access Firefox profile manager, and create a new profile named "User1".
 
@@ -16,8 +16,8 @@ from selenium import webdriver
 instance = webdriver.Firefox('default')
 {% endhighlight %}
 
-Same like above,we can sign in with "User1" profile with another account with different cookie,then start webdriver:
+Same like above,we can sign in with "User1" profile with another account with different cookie, then start webdriver:
 
 {% highlight python %}
 instance = webdriver.Firefox('User1')
-{% endhighlight %}
+{% endhighlight %} 
