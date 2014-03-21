@@ -42,7 +42,10 @@ h1 {
   font-weight:normal;
 }
 
-p { margin: 1em 0; }
+p { 
+  margin: 1em 0;
+  color: #222;
+ }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
