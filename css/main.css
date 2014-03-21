@@ -27,6 +27,7 @@ h2 {
   font-size: 20px;
   margin: 1em 0;
   color: #222;
+  font-weight:normal;
 }
 
 h3 {
@@ -37,7 +38,8 @@ h3 {
 h1 { 
   font-size: 25px;
   margin: 1em 0;
-  color: #222;
+  color: #777;
+  font-weight:normal;
 }
 
 p { margin: 1em 0; }
@@ -109,6 +111,7 @@ a:visited { color: #a0a; }
 
 .meta {
   color: #aaa;
+  margin-bottom: 20px;
 }
 
 .footer {
