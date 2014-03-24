@@ -17,6 +17,8 @@ body {
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h3, h4, h5, h6 {
@@ -36,7 +38,7 @@ h3 {
 }
 
 h1 { 
-  font-size: 25px;
+  font-size: 20px;
   margin: 1em 0;
   color: #777;
   font-weight:normal;
@@ -47,9 +49,9 @@ p {
   color: #222;
  }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #444; text-decoration:none;}
+a:hover   { color: #000; text-decoration:underline;}
+a:visited { color: #a0a; text-decoration:none;}
 
 /*****************************************************************************/
 /*
@@ -62,13 +64,29 @@ a:visited { color: #a0a; }
 }
 
 .posts li {
-  line-height: 1.75em;
+  line-height: 2.5em;
 }
 
 .posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
+}
+.left_pic
+{
+  left: 0;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: black;
+}
+.left_pic img
+{
+  height: 100%;
+  width: 100%;
+}
+#home
+{
+  margin-left:53%; 
 }
 
 /*****************************************************************************/
@@ -79,10 +97,10 @@ a:visited { color: #a0a; }
 
 .site {
   font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+  text-align: left;
+  width: 100%;
+
+  line-height: 2em;
 }
 
 .header a {
@@ -92,16 +110,18 @@ a:visited { color: #a0a; }
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
+  margin: 3em 0;
 }
 
 .title a {
   color: #C74433;
   font-size: 20px;
+  font-weight: normal;
+  font-family: Century Gothic, Arial, sans-serif;
 }
 
 .title a:hover {
-  color: #000;
+  color: #C74444;
 }
 
 .header a.extra {
@@ -144,7 +164,50 @@ a:visited { color: #a0a; }
 .footer .rss img {
   border: 0;
 }
-
+.side_bar
+{
+  position: fixed;
+  left: 0px;
+  height: 100%;
+  width: 40px;
+  background-color: #222;
+  overflow: hidden;
+}
+.logo
+{
+  margin: 3.5em 0 5em 0;
+  width: 100%;
+}
+.logo img
+{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.icon_list
+{
+  position: absolute;
+  top:30%;
+  width: 150px;
+}
+.icon_list li
+{
+  margin: 20px 0;
+  margin-left: 4px;
+  line-height: 32px;
+}
+.icon_list img
+{
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.icon_list span
+{
+  color: white;
+  position: absolute;
+  line-height: 32px;
+  padding-left: 10px;
+}
 /*****************************************************************************/
 /*
 /* Posts
@@ -152,6 +215,12 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 /* standard */
+.article
+{
+  width: 650px;
+  position: absolute;
+}
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;

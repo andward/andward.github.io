@@ -2,12 +2,20 @@
 layout: default
 title: Andward Blog
 ---
-
+<div class='left_pic'><img src="/images/black.jpg"></div>
 <div id="home">
-  <h3>Articles</h3>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	<div class="header">
+		<h1 class="title">
+			<a href="/">{{ site.name }}</a>
+		</h1>
+	</div>
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li>
+			<span>{{ post.date | date_to_string }}</span>
+			&raquo;
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
 </div>

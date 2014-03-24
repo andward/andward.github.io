@@ -6,7 +6,9 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/images/google.ico" type="image/x-icon">
-
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <!-- Custom js -->
+        <script language="javascript" type="text/javascript" src="/js/index.js"></script>
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
@@ -17,24 +19,10 @@
     <body>
 
         <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          </div>
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Github <br />
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/andward">github.com/andward</a><br />
-              </p>
-            </div>
-          </div>
+          
         </div>
 
     </body>
