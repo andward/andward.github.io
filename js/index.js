@@ -1,7 +1,7 @@
 $(document).ready(function($) {
+    setLeft();
 	loadBigImage();
 	hoverBar();
-	setLeft();
 });
 
 
