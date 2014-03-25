@@ -175,14 +175,19 @@ a:visited { color: #a0a; text-decoration:none;}
 }
 .logo
 {
-  margin: 3.5em 0 5em 0;
+  margin: 4em 0 5em 0;
+  height: 20px;
   width: 100%;
 }
 .logo img
 {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  right: 40px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: gray;
 }
 .icon_list
 {
@@ -207,6 +212,10 @@ a:visited { color: #a0a; text-decoration:none;}
   position: absolute;
   line-height: 32px;
   padding-left: 10px;
+}
+.icon_list span:hover
+{
+  color: #C74433;
 }
 /*****************************************************************************/
 /*

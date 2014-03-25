@@ -6,19 +6,20 @@ $(document).ready(function($) {
 
 
 function hoverBar() {
+	var left_distance = ($(window).width() - 650) / 2;
 	$(".side_bar").hover(function() {
-		$(this).animate({
+		$(this).stop().animate({
 			width: 150
 		}, 300);
-		$(".article").animate({
-			left: "+=100px"
+		$(".article").stop().animate({
+			left: left_distance + 100
 		}, 300);
 	}, function() {
-		$(this).animate({
+		$(this).stop().animate({
 			width: 40
 		}, 300);
-		$(".article").animate({
-			left: "-=100px"
+		$(".article").stop().animate({
+			left: left_distance
 		}, 300);
 	});
 }
