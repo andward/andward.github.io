@@ -85,9 +85,18 @@ a:visited { color: #444; text-decoration:none;}
   width: 100%;
   display: none;
 }
+.right_side
+{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1001;
+  background-color: white;
+}
 #home
 {
-  margin-left:53%; 
+  margin-left: 6%;
 }
 
 /*****************************************************************************/
@@ -230,6 +239,7 @@ a:visited { color: #444; text-decoration:none;}
 .article
 {
   width: 650px;
+  padding: 0 10px;
   position: absolute;
   left: 400px;
 }
