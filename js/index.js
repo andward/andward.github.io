@@ -1,4 +1,5 @@
 $(document).ready(function($) {
+	loadBigImage();
 	hoverBar();
 	setLeft();
 });
@@ -27,4 +28,10 @@ function hoverBar() {
 function setLeft() {
 	var w = $(window).width();
 	$(".article").css("left",(w-650)/2);
+}
+
+function loadBigImage() {
+	$(".left_pic img").load(function(){
+		$(this).fadeIn(300);
+	});
 }
