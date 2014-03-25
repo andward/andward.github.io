@@ -2,6 +2,7 @@ $(document).ready(function($) {
     setLeft();
 	loadBigImage();
 	hoverBar();
+	hoverLogo();
 });
 
 
@@ -33,5 +34,13 @@ function setLeft() {
 function loadBigImage() {
 	$(".left_pic img").load(function(){
 		$(this).fadeIn(300);
+	});
+}
+
+function hoverLogo(){
+	$(".logo img").hover(function() {
+		$(this).css('background-color','#d5d5d5');
+	}, function() {
+		$(this).css('background-color','gray');
 	});
 }
