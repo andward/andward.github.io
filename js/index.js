@@ -1,12 +1,12 @@
 $(document).ready(function($) {
 	initWindow();
-	setPanelWidth();
 	loadBigImage();
-
 	hoverLogo();
+	collectArticleByMouth();
 });
 
 resizeWindow();
+
 
 function resizeWindow() {
 	$(window).resize(function() {
@@ -14,6 +14,7 @@ function resizeWindow() {
 			mobileWindow();
 		} else {
 			webWindow();
+			setPanelWidth();
 			setArticleLeft();
 		}
 	});
@@ -23,6 +24,7 @@ function initWindow() {
 	if ($(window).width() < 800) {
 		mobileWindow();
 	} else {
+		setPanelWidth();
 		setArticleLeft();
 		hoverBar();
 	}
@@ -115,8 +117,30 @@ function hoverLogo(){
 }
 
 function collectArticleByMouth() {
-	$(".posts li").each(function() {
-		var date = $(this).find('span').html();
+	var current_year = '';
+	var current_month = '';
+	$(".left_pic").one('click', function() {
+		/* Act on the event */
+		$(".posts li").each(function() {
+			var date = $(this).find('span').html().split(" ");
+			var year = date[2];
+			var month = date[1] + " ";
+			if (current_year === '') {
+				$(this).prepend("<div class='time'>" + month + year + "</div>");
+				current_year = year;
+				current_month = month;
+			} else if (current_year === year) {
+				if (current_month != month) {
+					$(this).prepend("<div class='time'>" + month + year + "</div>");
+					current_year = year;
+					current_month = month;
+				}
+			} else {
+				$(this).prepend("<div class='time'>" + month + year + "</div>");
+				current_year = year;
+				current_month = month;
+			}
+		});
+		$(".left_pic img").css('opacity', 0.5);
 	});
 }
-
