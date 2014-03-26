@@ -231,6 +231,7 @@ a:visited { color: #444; text-decoration:none;}
   border-radius: 50%;
   width: 32px;
   height: 32px;
+  background-color: gray;
 }
 .icon_list span
 {
