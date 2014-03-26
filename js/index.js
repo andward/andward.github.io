@@ -1,9 +1,8 @@
 $(document).ready(function($) {
 	initWindow();
 	setPanelWidth();
-    setLeft();
 	loadBigImage();
-	hoverBar();
+
 	hoverLogo();
 });
 
@@ -15,6 +14,7 @@ function resizeWindow() {
 			mobileWindow();
 		} else {
 			webWindow();
+			setArticleLeft();
 		}
 	});
 }
@@ -22,6 +22,9 @@ function resizeWindow() {
 function initWindow() {
 	if ($(window).width() < 800) {
 		mobileWindow();
+	} else {
+		setArticleLeft();
+		hoverBar();
 	}
 }
 
@@ -92,7 +95,7 @@ function hoverBar() {
 	});
 }
 
-function setLeft() {
+function setArticleLeft() {
 	var w = $(window).width();
 	$(".article").css("left",(w-650)/2);
 }
