@@ -177,7 +177,7 @@ a:visited { color: #444; text-decoration:none;}
 .side_bar
 {
   position: fixed;
-  left: 0px;
+  left: 0;
   height: 100%;
   width: 40px;
   background-color: #222;
@@ -202,7 +202,7 @@ a:visited { color: #444; text-decoration:none;}
 .icon_list
 {
   position: absolute;
-  top:30%;
+  top:200px;
   width: 150px;
 }
 .icon_list li
@@ -239,7 +239,6 @@ a:visited { color: #444; text-decoration:none;}
 .article
 {
   width: 650px;
-  padding: 0 10px;
   position: absolute;
   left: 400px;
 }

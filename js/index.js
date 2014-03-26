@@ -1,4 +1,5 @@
 $(document).ready(function($) {
+	initWindow();
 	setPanelWidth();
     setLeft();
 	loadBigImage();
@@ -6,40 +7,70 @@ $(document).ready(function($) {
 	hoverLogo();
 });
 
-$(window).resize(function() {
+resizeWindow();
+
+function resizeWindow() {
+	$(window).resize(function() {
+		if ($(window).width() < 800) {
+			mobileWindow();
+		} else {
+			webWindow();
+		}
+	});
+}
+
+function initWindow() {
 	if ($(window).width() < 800) {
-		$(".right_side").css({
-			'left': 0,
-			'right': ''
-		});
-		$(".article").css({
-			'left': 0,
-			'right': 0,
-			'width': "95%"
-		});
-		$(".side_bar").css({
-			'display': 'none'
-		});
-	} else {
-		$(".right_side").css({
-			'left': '',
-			'right': 0
-		});
-		$(".article").css({
-			'left': '',
-			'right': '',
-			'width': '650px'
-		});
-		$(".side_bar").css({
-			'display': 'block'
-		});
+		mobileWindow();
 	}
-});
+}
+
+function mobileWindow() {
+	$(".left_pic").css({
+		'display': 'none'
+	});
+	$(".right_side").css({
+		'left': '5px',
+		'right': '5px',
+		'width': "100%"
+	});
+	$(".article").css({
+		'left': '5px',
+		'right': '',
+		'width': '95%'
+	});
+	$(".side_bar").css({
+		'display': 'none'
+	});
+}
+
+function webWindow() {
+	$(".left_pic").css({
+		'left': 0,
+		'right': '',
+		'display': 'block'
+	});
+	$(".right_side").css({
+		'right': 0,
+		'left': ''
+	});
+	setPanelWidth();
+	$(".article").css({
+		'left': '',
+		'right': '',
+		'width': '650px'
+	});
+	$(".side_bar").css({
+		'display': 'block'
+	});
+}
 
 function setPanelWidth() {
-	var width = $(window).width()/2;
-	$(".left_pic").width(width);
-	$(".right_side").width(width);
+	var height = window.screen.availHeight;
+	var width = window.screen.availWidth;
+	$(".left_pic").width(width/2);
+	$(".left_pic").height(height);
+	$(".right_side").width(width/2);
 }
 
 function hoverBar() {
