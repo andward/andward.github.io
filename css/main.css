@@ -248,10 +248,14 @@ a:visited { color: #444; text-decoration:none;}
 }
 .share_button
 {
-  height: 30px;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 1em;
+}
+.button_list
+{
+  float: right;
+  margin: 0 5px;
 }
 /*****************************************************************************/
 /*
