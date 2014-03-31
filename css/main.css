@@ -168,11 +168,13 @@ a:visited { color: #444; text-decoration:none;}
   border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
+  height: 100px;
+  position: relative;
 }
 
 .footer .contact {
   float: left;
-  margin-right: 3em;
+  margin-right: 0.5em;
 }
 
 .footer .contact a {
@@ -243,6 +245,13 @@ a:visited { color: #444; text-decoration:none;}
 .icon_list span:hover
 {
   color: #C74433;
+}
+.share_button
+{
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 1em;
 }
 /*****************************************************************************/
 /*
