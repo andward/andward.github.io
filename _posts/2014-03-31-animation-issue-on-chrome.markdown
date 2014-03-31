@@ -8,7 +8,7 @@ category: js
 同事写js animation的时候碰到了一个很奇怪的问题 -> 一个有<code>margin</code>和<code>overflow:hidden</code>的div里存在很多li。在用jquery的animation移动这些li的时候，li的css会显示在margin层上。直接看code:
 
 js
-{% highlight ruby %}
+{% highlight js %}
 $('.scrollbar').find('li').live('click', function(event) {
      $('.bbslider').animate({
          'left': ‘+=100px’
@@ -17,7 +17,7 @@ $('.scrollbar').find('li').live('click', function(event) {
 {% endhighlight %}
 
 html
-{% highlight ruby %}
+{% highlight html %}
 <div class='tag_area'>
 	<div class='tag_align_area'>
 		<div class='tag_content_area'>
@@ -44,7 +44,7 @@ html
 {% endhighlight %}
 
 css
-{% highlight ruby %}
+{% highlight css %}
 .tag_align_area
 {
 	margin: 0 auto; 
