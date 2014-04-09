@@ -4,8 +4,7 @@ layout: default
 <div class='side_bar'>
 	<div class='logo'>
 		<a href="/">
-			<img src="/images/logo.png">
-		</a>
+			<img src="/images/logo.png"></a>
 	</div>
 	<div class='icon_list'>
 		<ul>
@@ -13,7 +12,7 @@ layout: default
 				<a href="https://github.com/andward">
 					<img src="/images/github.png">
 					<span>Github</span>
-				</a>				
+				</a>
 			</li>
 			<li>
 				<a href="http://s.weibo.com/weibo/andward_xu">
@@ -38,12 +37,22 @@ layout: default
 	<p class="meta">{{ page.date | date_to_string }}</p>
 
 	<div class="post">{{ content }}</div>
+	<div class="pagination">
+		<div class="previous"><< 
+			<a href="{{ page.previous.url }}">
+				{{ page.previous.title }}
+			</a>
+		</div>
+		<div class="next">>> 
+			<a href="{{page.next.url}}">
+				{{ page.next.title }}
+			</a>
+		 </div>
+	</div>
 
 	<div class="footer">
 		<div class="contact">
-			<p>
-				Powered by  
-			</p>
+			<p>Powered by</p>
 		</div>
 		<div class="contact">
 			<p>
@@ -58,7 +67,7 @@ layout: default
 			<div class='button_list'>
 				<div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
 			</div>
-			
+
 		</div>
 	</div>
 </div>
