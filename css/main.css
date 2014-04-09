@@ -286,7 +286,7 @@ a:visited { color: #444; text-decoration:none;}
 
 .post pre {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #f1f1f1;
   padding: 0 .4em;
 }
 
@@ -296,7 +296,7 @@ a:visited { color: #444; text-decoration:none;}
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #f1f1f1;
   padding: 0 .2em;
 }
 
