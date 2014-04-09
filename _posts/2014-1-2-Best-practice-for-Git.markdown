@@ -2,7 +2,7 @@
 layout: post
 title: Best practice for Git
 date: 2014-01-02 18:52:20
-category: CI
+categories: CI git Gerrit
 ---
 
 ###Fix master bug on master branch

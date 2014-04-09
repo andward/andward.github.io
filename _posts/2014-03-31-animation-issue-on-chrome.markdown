@@ -2,7 +2,7 @@
 layout: post
 title: 元素在Chrome上的移动的问题（JQuery animation）
 date: 2014-3-31 14:00:00
-category: js
+categories: js jquery
 ---
 
 同事写js animation的时候碰到了一个很奇怪的问题 -> 一个有<code>margin</code>和<code>overflow:hidden</code>的div里存在很多li。在用jquery的animation移动这些li的时候，li的css会显示在margin层上。直接看code:

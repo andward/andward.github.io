@@ -2,7 +2,7 @@
 layout: post
 title: MySQL replication with specific database
 date: 2014-01-02 18:52:20
-category: Django
+categories: Django MySQL
 ---
 
 {% highlight python %}
