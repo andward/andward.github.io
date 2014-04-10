@@ -91,7 +91,6 @@ a:visited { color: #444; text-decoration:none;}
   position: absolute;
   right: 0;
   width: 50%;
-  height: 100%;
   z-index: 1001;
   background-color: white;
 }

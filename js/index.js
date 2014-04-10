@@ -15,6 +15,7 @@ function resizeWindow() {
 		} else {
 			webWindow();
 			setPanelWidth();
+			setPanelHeight();
 			setArticleLeft();
 		}
 	});
@@ -25,6 +26,7 @@ function initWindow() {
 		mobileWindow();
 	} else {
 		setPanelWidth();
+		setPanelHeight();
 		setArticleLeft();
 		hoverBar();
 	}
@@ -71,11 +73,16 @@ function webWindow() {
 }
 
 function setPanelWidth() {
-	var height = window.screen.availHeight;
 	var width = window.screen.availWidth;
 	$(".left_pic").width(width/2);
-	$(".left_pic").height(height);
 	$(".right_side").width(width/2);
+}
+
+function setPanelHeight() {
+	var height = window.screen.availHeight;
+	var content_height = $(document).height();
+	$(".left_pic").height(height);
+	$(".right_side").height(content_height);
 }
 
 function hoverBar() {
@@ -142,5 +149,6 @@ function collectArticleByMouth() {
 			}
 		});
 		$(".left_pic img").css('opacity', 0.5);
+		setPanelHeight();
 	});
 }
