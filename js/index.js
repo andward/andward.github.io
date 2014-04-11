@@ -132,18 +132,18 @@ function collectArticleByMouth() {
 			var date = $(this).find('span').html().split(" ");
 			var year = date[2];
 			var month = date[1] + " ";
+			var html = "<div class='time'>" + month + year + "</div>";
 			if (current_year === '') {
-				$(this).prepend("<div class='time'>" + month + year + "</div>");
+				$(this).before(html);
 				current_year = year;
 				current_month = month;
 			} else if (current_year === year) {
 				if (current_month != month) {
-					$(this).prepend("<div class='time'>" + month + year + "</div>");
-					current_year = year;
+					$(this).before(html);
 					current_month = month;
 				}
 			} else {
-				$(this).prepend("<div class='time'>" + month + year + "</div>");
+				$(this).before(html);
 				current_year = year;
 				current_month = month;
 			}
