@@ -3,6 +3,8 @@ $(document).ready(function($) {
 	loadBigImage();
 	hoverLogo();
 	collectArticleByMouth();
+	showFilteredPostByHoverTag();
+	randomColor();
 });
 
 resizeWindow();
@@ -87,20 +89,32 @@ function setPanelHeight() {
 
 function hoverBar() {
 	var left_distance = ($(window).width() - 650) / 2;
-	$(".side_bar").hover(function() {
-		$(this).stop().animate({
+	$(".fun_bar").hover(function() {
+		$(".side_bar").stop().animate({
 			width: 150
-		}, 300);
+		}, "fast");
 		$(".article").stop().animate({
 			left: left_distance + 100
-		}, 300);
-	}, function() {
-		$(this).stop().animate({
-			width: 40
-		}, 300);
-		$(".article").stop().animate({
-			left: left_distance
-		}, 300);
+		}, "fast");
+		$(".tag_post_list").stop().animate({
+			left: 150
+		}, "fast");
+	},function() {
+		$(".tag_post_list ul").css("display", "none");
+		$(".tag_post_list").stop().animate({
+			width: 0
+		}, "fast", function() {
+			$(".tag_post_list").stop().animate({
+				left: 40
+			}, "fast", function() {
+				$(".side_bar").stop().animate({
+					width: 40
+				}, "fast");
+				$(".article").stop().animate({
+					left: left_distance
+				}, "fast");
+			});
+		});
 	});
 }
 
@@ -150,5 +164,44 @@ function collectArticleByMouth() {
 		});
 		$(".left_pic img").css('opacity', 0.5);
 		setPanelHeight();
+	});
+}
+
+function showFilteredPostByHoverTag() {
+	$(".tag_content").hover(function() {
+			var tag = $(this).html();
+			$(".tag_post_list").stop().animate({
+				width: 250
+			}, "fast", function() {
+				$(".tag_post_list ul").css("display", "none");
+				$(".tag_post_list ul").each(function() {
+					if ($(this).hasClass(tag)) {
+						$(this).fadeIn('fast');
+					}
+				});
+			});
+		},
+		function() {
+			return 0;
+		});
+}
+
+function randomColor() {
+	var random_color = new Array;
+	var colorl = new Array('#e67e22', '#2ecc71', '#f1c40f', '#e74c3c', '#3498db', '#7f8c8d', '#9b59b6', '#d35400', '#c0392b', '#bdc3c7', '#34495e', '#16a085');
+	var random = 0;
+	$(".tag_color").each(function() {
+		var random_num = Math.floor(Math.random() * 12);
+		if (random_num === random) {
+			if (random_num === 11) {
+				random_num = 10;
+			} else if (random_num === 0) {
+				random_num = 1;
+			} else {
+				random_num += 1;
+			}
+		}
+		$(this).css("background-color", colorl[random_num]);
+		random = random_num;
 	});
 }

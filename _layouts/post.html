@@ -1,30 +1,52 @@
 ---
 layout: default
 ---
-<div class='side_bar'>
-	<div class='logo'>
-		<a href="/">
-			<img src="/images/logo.png"></a>
+<div class='fun_bar'>
+	<div class='side_bar'>
+		<div class='logo'>
+			<a href="/">
+				<img src="/images/logo.png"></a>
+		</div>
+		<div class='category'>
+			{% for tag in page.categories %}
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+				<div class='gap'>
+					<div class='tag_content'>{{ tag }}</div>
+				</div>
+			</div>
+			{% endfor %}
+			<div style='width:100%;height:50px'></div>
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+				<div class='gap'><a href="https://github.com/andward">
+				<div class='contact_content'>github</div>
+				</a></div>
+			</div>
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+				<div class='gap'><a href="https://github.com/andward">
+				<div class='contact_content'>weibo</div>
+				</a></div>
+			</div>
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+				<div class='gap'><div class='contact_content'>andward_xu</div></div>
+			</div>
+		</div>
 	</div>
-	<div class='icon_list'>
-		<ul>
+	<div class='tag_post_list'>
+		{% for tag in page.categories %}
+		<ul class='{{ tag }}'>
+			{% for post in site.posts %}
+	{% if post.categories contains tag %}
 			<li>
-				<a href="https://github.com/andward">
-					<img src="/images/github.png">
-					<span>Github</span>
-				</a>
+				<a href="{{ post.url }}">{{ post.title }}</a>
 			</li>
-			<li>
-				<a href="http://s.weibo.com/weibo/andward_xu">
-					<img src="/images/weibo.jpg">
-					<span>Weibo</span>
-				</a>
-			</li>
-			<li>
-				<img src="/images/wechat.jpg">
-				<span>andward_xu</span>
-			</li>
+			{% endif %}
+	{% endfor %}
 		</ul>
+		{% endfor %}
 	</div>
 </div>
 <div class='article'>
