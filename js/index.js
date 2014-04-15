@@ -2,6 +2,7 @@ $(document).ready(function($) {
 	initWindow();
 	loadBigImage();
 	hoverLogo();
+	showWechat();
 	collectArticleByMouth();
 	showFilteredPostByHoverTag();
 	randomColor();
@@ -134,6 +135,14 @@ function hoverLogo(){
 		$(this).css('background-color','#d5d5d5');
 	}, function() {
 		$(this).css('background-color','gray');
+	});
+}
+
+function showWechat() {
+	$(".wechat").hover(function() {
+		$(".wechat_img").fadeIn('fast');
+	}, function() {
+		$(".wechat_img").fadeOut('fast');
 	});
 }
 
