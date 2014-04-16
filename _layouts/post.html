@@ -52,11 +52,10 @@ layout: default
 </div>
 <div class='article'>
 	<div class="header">
-		<h1 class="title">
-			<a href="/">{{ site.name }}</a>
+		<h1 class="head">
+			{{ page.title }}
 		</h1>
 	</div>
-	<h1>{{ page.title }}</h1>
 	<p class="meta">{{ page.date | date_to_string }}</p>
 
 	<div class="post">{{ content }}</div>

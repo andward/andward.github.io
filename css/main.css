@@ -23,30 +23,27 @@ body {
 
 h3, h4, h5, h6 {
   font-size: 100%;
-  color: #222; }
+  color: #444; }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 1em 0;
-  color: #222;
+  color: #444;
   font-weight:normal;
 }
 
 h3 {
   margin: 10px 0;
-  color: #222;
+  color: #444;
 }
 
 h1 { 
   font-size: 20px;
-  margin: 1em 0;
-  color: #777;
-  font-weight:normal;
 }
 
 p { 
   margin: 1em 0;
-  color: #222;
+  color: #333;
  }
 
 a         { color: #444; text-decoration:none;}
@@ -60,7 +57,7 @@ a:visited { color: #444; text-decoration:none;}
 /*****************************************************************************/
 .posts {
   list-style-type: none;
-  margin-bottom: 2em;
+  margin:3em 0;
 }
 
 .posts li {
@@ -125,22 +122,24 @@ a:visited { color: #444; text-decoration:none;}
 
   line-height: 2em;
 }
-
-.header a {
-  font-weight: bold;
+.head
+{
   text-decoration: none;
+  margin: 7em 0 2em 0;
+  color:rgba(199, 68, 51, 0.8);
+  font-weight:normal;
 }
-
 .title {
   display: inline-block;
-  margin: 3em 0;
+  margin: 5em 0 0 0;
 }
 
 .title a {
-  color: #C74433;
+  color: rgba(199, 68, 51, 0.8);
   font-size: 20px;
   font-weight: normal;
   font-family: Century Gothic, Arial, sans-serif;
+  text-decoration: none;
 }
 
 .title a:hover {
@@ -157,8 +156,8 @@ a:visited { color: #444; text-decoration:none;}
 }
 
 .meta {
-  color: #aaa;
-  margin-bottom: 20px;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 2em;
 }
 
 .footer {
@@ -205,8 +204,8 @@ a:visited { color: #444; text-decoration:none;}
 }
 .logo
 {
-  margin: 4em 0 5em 0;
-  height: 20px;
+  margin: 8em 0 0 0;
+  height: 100px;
   width: 100%;
 }
 .logo img
@@ -245,7 +244,7 @@ a:visited { color: #444; text-decoration:none;}
 .category
 {
   position: absolute;
-  top:250px;
+  top: 300px;
   width: 150px;
 }
 .tag_container
@@ -269,7 +268,7 @@ a:visited { color: #444; text-decoration:none;}
 .tag_content
 {
   height: 40px;
-  color: white;
+  color: #f5f5f5;
   line-height: 40px;
   width: 98px;
   cursor: pointer;
