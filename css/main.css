@@ -202,22 +202,7 @@ a:visited { color: #444; text-decoration:none;}
   background-color: #444;
   overflow: hidden;
 }
-.logo
-{
-  margin: 8em 0 0 0;
-  height: 100px;
-  width: 100%;
-}
-.logo img
-{
-  width: 100px;
-  height: 100px;
-  right: 40px;
-  position: absolute;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: gray;
-}
+
 .share_button
 {
   position: absolute;
@@ -244,7 +229,7 @@ a:visited { color: #444; text-decoration:none;}
 .category
 {
   position: absolute;
-  top: 300px;
+  top: 100px;
   width: 150px;
 }
 .tag_container
@@ -268,7 +253,7 @@ a:visited { color: #444; text-decoration:none;}
 .tag_content
 {
   height: 40px;
-  color: #f5f5f5;
+  color: rgba(255,255,255,0.8);
   line-height: 40px;
   width: 98px;
   cursor: pointer;
@@ -277,7 +262,7 @@ a:visited { color: #444; text-decoration:none;}
 {
   float: left;
   height: 40px;
-  color: white;
+  color: rgba(255,255,255,0.5);
   line-height: 40px;
   width: 98px;
   cursor: pointer;

@@ -3,11 +3,18 @@ layout: default
 ---
 <div class='fun_bar'>
 	<div class='side_bar'>
-		<div class='logo'>
-			<a href="/">
-				<img src="/images/logo.png"></a>
-		</div>
 		<div class='category'>
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+				<div class='gap'>
+					<a href="/">
+						<div class='contact_content'>HOME</div>
+					</a>
+				</div>
+			</div>
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+			</div>
 			{% for tag in page.categories %}
 			<div class='tag_container'>
 				<div class='tag_color'></div>
@@ -16,24 +23,33 @@ layout: default
 				</div>
 			</div>
 			{% endfor %}
-			<div style='width:100%;height:40px'></div>
 			<div class='tag_container'>
 				<div class='tag_color'></div>
-				<div class='gap'><a href="https://github.com/andward">
-				<div class='contact_content'>github</div>
-				</a></div>
 			</div>
 			<div class='tag_container'>
 				<div class='tag_color'></div>
-				<div class='gap'><a href="http://s.weibo.com/weibo/andward_xu">
-				<div class='contact_content'>weibo</div>
-				</a></div>
+				<div class='gap'>
+					<a href="https://github.com/andward">
+						<div class='contact_content'>GITHUB</div>
+					</a>
+				</div>
 			</div>
 			<div class='tag_container'>
 				<div class='tag_color'></div>
-				<div class='gap'><div class='contact_content wechat'>andward_xu</div></div>
+				<div class='gap'>
+					<a href="http://s.weibo.com/weibo/andward_xu">
+						<div class='contact_content'>WEIBO</div>
+					</a>
+				</div>
 			</div>
-			<div class='wechat_img'><img src="/images/wechat.png"></div>
+			<div class='tag_container'>
+				<div class='tag_color'></div>
+				<div class='gap'>
+					<div class='contact_content wechat'>WECHAT</div>
+				</div>
+			</div>
+			<div class='wechat_img'>
+				<img src="/images/wechat.png"></div>
 		</div>
 	</div>
 	<div class='tag_post_list'>
@@ -52,24 +68,20 @@ layout: default
 </div>
 <div class='article'>
 	<div class="header">
-		<h1 class="head">
-			{{ page.title }}
-		</h1>
+		<h1 class="head">{{ page.title }}</h1>
 	</div>
 	<p class="meta">{{ page.date | date_to_string }}</p>
 
 	<div class="post">{{ content }}</div>
 	<div class="pagination">
-		<div class="previous"><< 
-			<a href="{{ page.previous.url }}">
-				{{ page.previous.title }}
-			</a>
+		<div class="previous">
+			<< 
+			<a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
 		</div>
-		<div class="next">>> 
-			<a href="{{page.next.url}}">
-				{{ page.next.title }}
-			</a>
-		 </div>
+		<div class="next">
+			>>
+			<a href="{{page.next.url}}">{{ page.next.title }}</a>
+		</div>
 	</div>
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -83,9 +95,15 @@ layout: default
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+	<noscript>
+		Please enable JavaScript to view the
+		<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+	</noscript>
+	<a href="http://disqus.com" class="dsq-brlink">
+		comments powered by
+		<span class="logo-disqus">Disqus</span>
+	</a>
+
 	<div class="footer">
 		<div class="contact">
 			<p>Powered by</p>

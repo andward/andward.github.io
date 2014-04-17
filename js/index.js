@@ -84,8 +84,11 @@ function setPanelWidth() {
 function setPanelHeight() {
 	var height = window.screen.availHeight;
 	var content_height = $(document).height();
+	var win_height = $(window).height();
+	var category_height = $(".category").height();
 	$(".left_pic").height(height);
 	$(".right_side").height(content_height);
+	$(".category").css("top", (win_height - category_height)/2);
 }
 
 function hoverBar() {
