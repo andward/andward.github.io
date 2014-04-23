@@ -5,6 +5,8 @@ date: 2014-01-02 18:52:20
 category: Test
 ---
 
+![image](http://i67.photobucket.com/albums/h308/andward/girl_zps33e1fac6.jpg)
+
 In webdriver test for Firefox, we can setup multiple profile to handle some requirement (eg:login with cookies)
 
 Run "firefox -P" to access Firefox profile manager, and create a new profile named "User1".

@@ -5,6 +5,8 @@ date: 2014-01-01 18:52:20
 categories: Django MySQL
 ---
 
+![image](http://i67.photobucket.com/albums/h308/andward/stories_zps7511eb9a.jpg)
+
 Separating out database server and Web server can increase resource efficiency. Server will not fight for resource using. Here we use mysql server to demo..
 
 We modify MySQL setting that let it can be remote connected. Login in mysql server by mysql -u root -p your password, and

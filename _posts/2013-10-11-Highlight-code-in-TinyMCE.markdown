@@ -5,6 +5,8 @@ date: 2013-10-11 10:00:00
 category: Opensource
 ---
 
+![image](http://i67.photobucket.com/albums/h308/andward/girl3_zpsb9743c0a.jpg)
+
 SyntaxHighlighter is a popular code highlight tool using in wordpress.It also can be pluged into TinyMCE.
 
 First..Download SyntaxHighlighter from its [site][lighter-link] and extract it into your app static folder.

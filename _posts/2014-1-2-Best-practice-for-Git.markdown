@@ -5,6 +5,8 @@ date: 2014-01-02 18:52:20
 categories: CI git Gerrit
 ---
 
+![image](http://i67.photobucket.com/albums/h308/andward/bkbridge_zps23b6d7bc.jpg)
+
 ###Fix master bug on master branch
 
 ###Cherry pick selected commits from dev to stable master
