@@ -45,7 +45,7 @@ function mobileWindow() {
 		'width': "100%"
 	});
 	$(".article").css({
-		'left': '5px',
+		'left': '2%',
 		'right': '',
 		'width': '95%'
 	});
