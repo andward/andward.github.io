@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 建立个人的Github page
+title: 建立个人的Github Page
 date: 2014-4-23 6:00:00
 categories: github git
 ---
@@ -47,7 +47,7 @@ Push好之后等2分钟，去访问域名justin-bieber.github.io，就会看到h
 
 ###个性化github page
 
-Github page只能host静态页面，如果想把blog做得“动感”一点，就需要借助一个blog frame <code>jekyllrb</code>。它提供结构化的静态页面框架，无需数据库支持，使用markdown编辑文本（文字爱好者的福音），使用Liquid让页面模板化，并提供许多blog-style的标签。更多内容请移步[这里][jekyllrb]。
+Github page只能host静态页面，如果想把blog做得“动感”一点，就需要借助一个blog frame <code>jekyll</code>。它提供结构化的静态页面框架，无需数据库支持，使用markdown编辑文本（文字爱好者的福音），使用Liquid让页面模板化，并提供许多blog-style的标签。更多内容请移步[这里][jekyllrb]。
 
 如果你有一台mac，恭喜你！所有的环境都已经ready了。如果是window或者是linux，你需要先安装一下Ruby和RubyGems。环境设置好后，我们在本地安装一下jekyll:
 
