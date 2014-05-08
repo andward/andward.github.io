@@ -1,6 +1,6 @@
 $(document).ready(function($) {
-	loadBigImage();
 	initWindow();
+	loadBigImage();
 	hoverLogo();
 	showWechat();
 	collectArticleByMouth();
@@ -78,7 +78,7 @@ function setPanelHeight() {
 	var content_height = $(document).height();
 	var win_height = $(window).height();
 	var category_height = $(".category").height();
-	$(".bg").height(content_height);
+	$(".bg").height(height);
 	$(".right_side").height(content_height);
 	$(".category").css("top", (win_height - category_height)/2);
 }
