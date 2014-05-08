@@ -121,6 +121,7 @@ function setArticleLeft() {
 
 function loadBigImage() {
 	$('.bg img').load(function() {
+		$(this).fadeIn("fast");
 		$(".right_side").stop(1).animate({
 			right: 0
 		}, "300");
