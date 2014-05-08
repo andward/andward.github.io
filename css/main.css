@@ -10,6 +10,19 @@
   padding: 0;
 }
 
+.bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: url(/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter:blur(0px);
+  display: none; 
+  cursor: pointer;
+}
 html, body { height: 100%; }
 
 body {
@@ -74,32 +87,18 @@ a:visited { color: #444; text-decoration:none;}
   color: #aaa;
   font-size: 80%;
 }
-.left_pic
-{
-  left: 0;
-  position: fixed;
-  width: 50%;
-  height: 100%;
-  background: black;
-  cursor: pointer;
-}
-.left_pic img
-{
-  height: 100%;
-  width: 100%;
-  display: none;
-}
+
 .right_side
 {
   position: absolute;
-  right: 0;
-  width: 50%;
+  right: -55%;
+  width: 55%;
   z-index: 1001;
   background-color: white;
 }
 #home
 {
-  margin-left: 6%;
+  margin: 0  10%;
 }
 .time
 {

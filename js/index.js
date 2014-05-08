@@ -1,6 +1,6 @@
 $(document).ready(function($) {
-	initWindow();
 	loadBigImage();
+	initWindow();
 	hoverLogo();
 	showWechat();
 	collectArticleByMouth();
@@ -36,12 +36,9 @@ function initWindow() {
 }
 
 function mobileWindow() {
-	$(".left_pic").css({
-		'display': 'none'
-	});
 	$(".right_side").css({
-		'left': '5px',
-		'right': '5px',
+		'left': '0',
+		'right': '0',
 		'width': "100%"
 	});
 	$(".article").css({
@@ -55,11 +52,6 @@ function mobileWindow() {
 }
 
 function webWindow() {
-	$(".left_pic").css({
-		'left': 0,
-		'right': '',
-		'display': 'block'
-	});
 	$(".right_side").css({
 		'right': 0,
 		'left': ''
@@ -77,8 +69,8 @@ function webWindow() {
 
 function setPanelWidth() {
 	var width = window.screen.availWidth;
-	$(".left_pic").width(width/2);
-	$(".right_side").width(width/2);
+	$(".bg").width(width);
+	$(".right_side").width(11*width/20);
 }
 
 function setPanelHeight() {
@@ -86,7 +78,7 @@ function setPanelHeight() {
 	var content_height = $(document).height();
 	var win_height = $(window).height();
 	var category_height = $(".category").height();
-	$(".left_pic").height(height);
+	$(".bg").height(height);
 	$(".right_side").height(content_height);
 	$(".category").css("top", (win_height - category_height)/2);
 }
@@ -128,8 +120,10 @@ function setArticleLeft() {
 }
 
 function loadBigImage() {
-	$(".left_pic img").load(function(){
-		$(this).fadeIn(300);
+	$('.bg').fadeIn("fast", function() {
+		$(".right_side").stop(1).animate({
+			right: 0
+		}, "300");
 	});
 }
 
@@ -152,7 +146,7 @@ function showWechat() {
 function collectArticleByMouth() {
 	var current_year = '';
 	var current_month = '';
-	$(".left_pic").one('click', function() {
+	$(".bg").one('click', function() {
 		/* Act on the event */
 		$(".posts li").each(function() {
 			var date = $(this).find('span').html().split(" ");
