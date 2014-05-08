@@ -200,7 +200,7 @@ function showFilteredPostByHoverTag() {
 
 function randomColor() {
 	var random_color = new Array;
-	var colorl = new Array('#e67e22', '#2ecc71', '#f1c40f', '#e74c3c', '#3498db', '#7f8c8d', '#9b59b6', '#d35400', '#c0392b', '#bdc3c7', '#34495e', '#16a085');
+	var colorl = new Array('#1abc9c', '#16a085', '#f1c40f', '#f39c12', '#2ecc71', '#27ae60', '#e67e22', '#d35400', '#3498db', '#2980b9', '#e74c3c', '#c0392b');
 	var random_num = Math.floor(Math.random() * 12);
 	$(".tag_color").each(function() {
 		if (random_num === 11) {
