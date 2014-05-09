@@ -1,7 +1,5 @@
 $(document).ready(function($) {
 	initWindow();
-	loadBigImage();
-	hoverLogo();
 	showWechat();
 	collectArticleByMouth();
 	showFilteredPostByHoverTag();
@@ -28,6 +26,7 @@ function initWindow() {
 	if ($(window).width() < 800) {
 		mobileWindow();
 	} else {
+		loadBigImage();
 		setPanelWidth();
 		setPanelHeight();
 		setArticleLeft();
@@ -125,14 +124,6 @@ function loadBigImage() {
 		$(".right_side").delay(500).animate({
 			right: '10%'
 		}, "300");
-	});
-}
-
-function hoverLogo(){
-	$(".logo img").hover(function() {
-		$(this).css('background-color','#d5d5d5');
-	}, function() {
-		$(this).css('background-color','gray');
 	});
 }
 
