@@ -98,8 +98,8 @@ a:visited { color: #444; text-decoration:none;}
 .right_side
 {
   position: absolute;
-  right: -55%;
-  width: 55%;
+  right: -50%;
+  width: 50%;
   z-index: 1001;
   background-color: white;
 }

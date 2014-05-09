@@ -53,7 +53,7 @@ function mobileWindow() {
 
 function webWindow() {
 	$(".right_side").css({
-		'right': 0,
+		'right': '10%',
 		'left': ''
 	});
 	setPanelWidth();
@@ -70,7 +70,7 @@ function webWindow() {
 function setPanelWidth() {
 	var width = window.screen.availWidth;
 	$(".bg").width(width);
-	$(".right_side").width(11*width/20);
+	$(".right_side").width(width/2);
 }
 
 function setPanelHeight() {
@@ -123,7 +123,7 @@ function loadBigImage() {
 	$('.bg img').load(function() {
 		$(this).fadeIn("fast");
 		$(".right_side").stop(1).animate({
-			right: 0
+			right: '10%'
 		}, "300");
 	});
 }
