@@ -119,6 +119,7 @@ function setArticleLeft() {
 }
 
 function loadBigImage() {
+	$(".bg img").attr('src', '/images/bg.jpg');
 	$('.bg img').load(function() {
 		$(this).fadeIn("fast");
 		$(".right_side").delay(500).animate({
