@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux+MySQL+Apache+Python配置（备忘）
+title: Linux+MySQL+Apache+Django配置（备忘）
 date: 2014-6-24 0:00
 categories: python django
 ---
