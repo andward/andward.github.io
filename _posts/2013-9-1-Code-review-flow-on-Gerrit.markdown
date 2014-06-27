@@ -5,7 +5,7 @@ date: 2013-09-01 9:52:23
 categories: CI git Gerrit Jenkins
 ---
 
-![image](http://i67.photobucket.com/albums/h308/andward/girl1_zpsf1f82f04.jpg)
+![image](http://andward-blog-picture.qiniudn.com/girl1.jpg)
 
 ##Preparation
 

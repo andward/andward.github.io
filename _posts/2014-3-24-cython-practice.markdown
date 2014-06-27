@@ -5,7 +5,7 @@ date: 2014-03-24 9:41
 categories: python C
 ---
 
-![image](http://i67.photobucket.com/albums/h308/andward/rain_zpsb36baa26.jpg)
+![image](http://andward-blog-picture.qiniudn.com/rain.jpg)
 
 最近在用python计算书名和tag的相似度，发现python的计算效率果然跟传说中的一样。。略低。所以打算用Cython	去改写代码中cpu计算密集的部分。
 

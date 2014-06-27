@@ -5,7 +5,7 @@ date: 2014-01-02 9:52:23
 categories: CI git
 ---
 
-![image](http://i67.photobucket.com/albums/h308/andward/blizzard_zpsaeba38d1.jpg)
+![image](http://andward-blog-picture.qiniudn.com/blizzard.jpg)
 
 Some day you use 'git rm file' to delete some files in your local repository and commit this change. To recover these removed files, you can do:
 

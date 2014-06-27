@@ -5,7 +5,7 @@ date: 2014-01-02 18:52:20
 categories: Django MySQL
 ---
 
-![image](http://i67.photobucket.com/albums/h308/andward/alaskabus_zpsab0dc2be.jpg)
+![image](http://andward-blog-picture.qiniudn.com/alaskabus.jpg)
 
 {% highlight python %}
 #replicate this database 

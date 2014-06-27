@@ -5,7 +5,7 @@ date: 2014-04-27 20:20:20
 categories: 面试
 ---
 
-![image](http://i67.photobucket.com/albums/h308/andward/interview_zpscba2195d.jpg)
+![image](http://andward-blog-picture.qiniudn.com/interview.jpg)
 
 最近我进行了人生中的第一次面试（面试别人）。来讲讲面试的感受。。
 
