@@ -52,7 +52,7 @@ function mobileWindow() {
 
 function webWindow() {
 	$(".right_side").css({
-		'right': '10%',
+		'right': '0',
 		'left': ''
 	});
 	setPanelWidth();
@@ -119,11 +119,11 @@ function setArticleLeft() {
 }
 
 function loadBigImage() {
-	$(".bg img").attr('src', '/images/bg.jpg');
+	$(".bg img").attr('src', 'http://andward-blog-picture.qiniudn.com/hand.jpg');
 	$('.bg img').load(function() {
 		$(this).fadeIn("fast");
 		$(".right_side").delay(500).animate({
-			right: '10%'
+			right: '0'
 		}, "300");
 	});
 }
