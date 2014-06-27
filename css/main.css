@@ -87,7 +87,7 @@ a:visited { color: #444; text-decoration:none;}
 }
 
 .posts li {
-  line-height: 3em;
+  line-height: 3.5em;
 }
 
 .posts span {
@@ -148,7 +148,7 @@ a:visited { color: #444; text-decoration:none;}
 
 .title a {
   color: rgba(199, 68, 51, 0.8);
-  font-size: 23px;
+  font-size: 20px;
   font-weight: normal;
   font-family: Century Gothic, Arial, sans-serif;
   text-decoration: none;
