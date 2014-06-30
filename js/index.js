@@ -3,7 +3,8 @@ $(document).ready(function($) {
 	showWechat();
 	collectArticleByMouth();
 	showFilteredPostByHoverTag();
-	randomColor();
+	randomColorInSideBar();
+	changeBgColorByScorll();
 });
 
 resizeWindow();
@@ -26,10 +27,10 @@ function initWindow() {
 	if ($(window).width() < 800) {
 		mobileWindow();
 	} else {
-		loadBigImage();
 		setPanelWidth();
 		setPanelHeight();
 		setArticleLeft();
+		randomBackgoundColor(".bg .auto_color");
 		hoverBar();
 	}
 }
@@ -48,6 +49,9 @@ function mobileWindow() {
 	$(".side_bar").css({
 		'display': 'none'
 	});
+	$("#home").css({
+		'margin':'0 5%'
+	});
 }
 
 function webWindow() {
@@ -64,12 +68,25 @@ function webWindow() {
 	$(".side_bar").css({
 		'display': 'block'
 	});
+	$("#home").css({
+		'margin':'0 15%'
+	});
 }
 
 function setPanelWidth() {
 	var width = window.screen.availWidth;
-	$(".bg").width(width);
-	$(".right_side").width(width/2);
+	$(".bg").width(2*width/5);
+	$(".right_side").width(3*width/5);
+	setDivWidthInBg();
+}
+
+function setDivWidthInBg(){
+	var width = $(".bg").width();
+	var height = $(".bg").height();
+	$(".bg .auto_color").css({
+		'width': width/3,
+		'height': height/4
+	});
 }
 
 function setPanelHeight() {
@@ -116,16 +133,6 @@ function hoverBar() {
 function setArticleLeft() {
 	var w = $(window).width();
 	$(".article").css("left",(w-650)/2);
-}
-
-function loadBigImage() {
-	$(".bg img").attr('src', 'http://andward-blog-picture.qiniudn.com/hand.jpg');
-	$('.bg img').load(function() {
-		$(this).fadeIn("fast");
-		$(".right_side").delay(500).animate({
-			right: '0'
-		}, "300");
-	});
 }
 
 function showWechat() {
@@ -185,15 +192,26 @@ function showFilteredPostByHoverTag() {
 		});
 }
 
-function randomColor() {
-	var random_color = new Array;
+function randomBackgoundColor(element){
 	var colorl = new Array('#1abc9c', '#16a085', '#f1c40f', '#f39c12', '#2ecc71', '#27ae60', '#e67e22', '#d35400', '#3498db', '#2980b9', '#e74c3c', '#c0392b');
 	var random_num = Math.floor(Math.random() * 12);
-	$(".tag_color").each(function() {
+	$(element).each(function() {
 		if (random_num === 11) {
 			random_num = 0;
 		}
 		$(this).css("background-color", colorl[random_num]);
 		random_num += 1;
+	});
+}
+
+function randomColorInSideBar() {
+	randomBackgoundColor(".tag_color");
+}
+
+function changeBgColorByScorll() {
+	$(window).scroll(function() {
+		if ($(document).scrollTop() % 20 === 0) {
+			randomBackgoundColor(".bg .auto_color");
+		}
 	});
 }

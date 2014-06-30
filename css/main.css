@@ -13,22 +13,17 @@
 .bg {
   position: fixed;
   height: 100%;
-  width: 100%; 
+  width: 50%; 
   cursor: pointer;
+  background-color: white;
 }
 
-.bg img
-{
-  height: 100%;
-  width: 100%;
-  background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter:blur(0px);
-  display: none;
+.bg .auto_color{
+  display: inline-block;
+  float: left;
+  opacity:0.5;
 }
+
 html, body { height: 100%; }
 
 body {
@@ -71,10 +66,16 @@ p img{
   width: 100%;
   height: inherit;
 }
-
-a         { color: #444; text-decoration:none;}
-a:hover   { color: #000; text-decoration:none;}
-a:visited { color: #444; text-decoration:none;}
+a {
+  color: #444;
+  text-decoration: none;
+}
+a:hover  { 
+  color: rgba(199, 68, 51, 0.8); 
+  text-decoration:none;
+  transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+}
 
 /*****************************************************************************/
 /*
@@ -83,34 +84,30 @@ a:visited { color: #444; text-decoration:none;}
 /*****************************************************************************/
 .posts {
   list-style-type: none;
-  margin:3em 0;
+  margin:7em 0;
 }
 
 .posts li {
-  line-height: 3.5em;
-  padding: 0px 15px;
-}
-
-.posts li:hover {
-  background-color: #f5f5f5;
+  padding: 15px 15px;
 }
 
 .posts span {
   color: #aaa;
   font-size: 80%;
+  display: block;
 }
 
 .right_side
 {
   position: absolute;
-  right: -50%;
+  right: 0;
   width: 50%;
   z-index: 1001;
   background-color: white;
 }
 #home
 {
-  margin: 0  10%;
+  margin: 0  15%;
 }
 .time
 {
@@ -141,10 +138,23 @@ a:visited { color: #444; text-decoration:none;}
 }
 .head
 {
+  text-align: center;
   text-decoration: none;
   margin: 5em 0 1em 0;
   color:rgba(199, 68, 51, 0.8);
   font-weight:normal;
+  font-size: 20px;
+}
+
+.index_head{
+  position:absolute;
+  top:45%;
+  height:40px;
+  margin-top:-20px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
 }
 .title {
   display: inline-block;
@@ -174,6 +184,7 @@ a:visited { color: #444; text-decoration:none;}
 
 .meta {
   color: rgba(0,0,0,0.5);
+  text-align: center;
 }
 
 .footer {
