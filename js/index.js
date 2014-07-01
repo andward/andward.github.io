@@ -18,6 +18,7 @@ function resizeWindow() {
 			webWindow();
 			setPanelWidth();
 			setPanelHeight();
+			setDivWidthInBg();
 			setArticleLeft();
 		}
 	});
@@ -29,6 +30,7 @@ function initWindow() {
 	} else {
 		setPanelWidth();
 		setPanelHeight();
+		setDivWidthInBg();
 		setArticleLeft();
 		randomBackgoundColor(".bg .auto_color");
 		hoverBar();
@@ -59,7 +61,6 @@ function webWindow() {
 		'right': '0',
 		'left': ''
 	});
-	setPanelWidth();
 	$(".article").css({
 		'left': '',
 		'right': '',
@@ -76,8 +77,7 @@ function webWindow() {
 function setPanelWidth() {
 	var width = window.screen.availWidth;
 	$(".bg").width(2*width/5);
-	$(".right_side").width(3*width/5);
-	setDivWidthInBg();
+	$(".right_side").width(3*width/5-10);
 }
 
 function setDivWidthInBg(){
