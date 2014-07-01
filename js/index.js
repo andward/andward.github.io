@@ -85,7 +85,7 @@ function setDivWidthInBg(){
 	var height = $(".bg").height();
 	$(".bg .auto_color").css({
 		'width': width/3,
-		'height': height/4
+		'height': height/5
 	});
 }
 
