@@ -92,11 +92,14 @@ function setDivWidthInBg(){
 function setPanelHeight() {
 	var height = window.screen.availHeight;
 	var content_height = $(document).height();
-	var win_height = $(window).height();
-	var category_height = $(".category").height();
+	var tag_count = $(".tag_container").length;
+	var tag_height = $(window).height()/tag_count;
 	$(".bg").height(height);
+	$(".tag_container").height(tag_height);
+	$(".tag_color").height(tag_height);
+	$(".tag_content").css("line-height",tag_height+"px");
+	$(".contact_content").css("line-height",tag_height+"px");
 	$(".right_side").height(content_height);
-	$(".category").css("top", (win_height - category_height)/2);
 }
 
 function hoverBar() {
@@ -109,7 +112,7 @@ function hoverBar() {
 			left: left_distance + 100
 		}, "fast");
 		$(".tag_post_list").stop().animate({
-			left: 150
+			left: 151
 		}, "fast");
 	},function() {
 		$(".tag_post_list ul").css("display", "none");
@@ -210,7 +213,7 @@ function randomColorInSideBar() {
 
 function changeBgColorByScorll() {
 	$(window).scroll(function() {
-		if ($(document).scrollTop() % 20 === 0) {
+		if ($(document).scrollTop() % 10 === 0) {
 			randomBackgoundColor(".bg .auto_color");
 		}
 	});

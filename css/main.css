@@ -226,8 +226,9 @@ a:hover  {
   left: 0;
   height: 100%;
   width: 40px;
-  background-color: #666;
+  background-color: white;
   overflow: hidden;
+  border-right: 1px solid #d5d5d5;
 }
 
 .share_button
@@ -256,20 +257,19 @@ a:hover  {
 .category
 {
   position: absolute;
-  top: 100px;
+  height: 100%;
   width: 150px;
 }
 .tag_container
 {
   width: 100%;
-  height: 40px;
   display: block;
 }
 .tag_color
 {
   float: left;
   width: 40px;
-  height: 40px;
+  height: 100%;
 }
 .gap
 {
@@ -279,8 +279,8 @@ a:hover  {
 }
 .tag_content
 {
-  height: 40px;
-  color: rgba(255,255,255,0.8);
+  height: 100%;
+  color: #444;
   line-height: 40px;
   width: 98px;
   cursor: pointer;
@@ -289,19 +289,19 @@ a:hover  {
 {
   float: left;
   height: 40px;
-  color: rgba(255,255,255,0.5);
+  color: #444;
   line-height: 40px;
   width: 98px;
   cursor: pointer;
 }
 .gap:hover
 {
-  background-color: gray;
+  background-color: #f5f5f5;
 }
 .tag_post_list
 {
   position: fixed;
-  background-color: #f1f1f1;
+  background-color: white;
   left: 40px;
   width: 0;
   height: 100%;
