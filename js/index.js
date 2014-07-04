@@ -171,7 +171,7 @@ function collectArticleByMouth() {
 				current_month = month;
 			}
 		});
-		$(".left_pic img").css('opacity', 0.5);
+		randomBackgoundColor(".time");
 		setPanelHeight();
 	});
 }
