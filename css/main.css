@@ -38,6 +38,11 @@
   opacity:0.5;
 }
 
+.auto_color:hover
+{
+  box-shadow: rgb(119, 119, 119) 0px 10px 5px;
+}
+
 html, body { height: 100%; }
 
 body {
