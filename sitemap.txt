@@ -1,0 +1,8 @@
+http://andward.github.io
+http://andward.github.io/python/django/2014/06/24/lmap-setup.html
+http://andward.github.io/%E9%9D%A2%E8%AF%95/2014/04/27/talk-about-interview.html
+http://andward.github.io/github/git/2014/04/22/Github-blog-setup.html
+http://andward.github.io/js/jquery/2014/03/31/animation-issue-on-chrome.html
+http://andward.github.io/ci/git/gerrit/2014/01/02/Best-practice-for-Git.html
+http://andward.github.io/ci/git/gerrit/jenkins/2013/09/01/Code-review-flow-on-Gerrit.html
+
