@@ -111,9 +111,7 @@ function hoverBar() {
 		$(".article").stop().animate({
 			left: left_distance + 100
 		}, "fast");
-		$(".tag_post_list").stop().animate({
-			left: 151
-		}, "fast");
+		$(".tag_post_list").css("left","151px");
 	},function() {
 		$(".tag_post_list ul").css("display", "none");
 		$(".tag_post_list").stop().animate({
