@@ -103,7 +103,7 @@ function setPanelHeight() {
 }
 
 function hoverBar() {
-	var left_distance = ($(window).width() - 650) / 2;
+	var left_distance = ($(window).width() - 740) / 2;
 	$(".fun_bar").hover(function() {
 		$(".side_bar").stop().animate({
 			width: 150
@@ -124,7 +124,7 @@ function hoverBar() {
 					width: 40
 				}, "fast");
 				$(".article").stop().animate({
-					left: left_distance
+					left: left_distance + 40
 				}, "fast");
 			});
 		});
@@ -133,7 +133,7 @@ function hoverBar() {
 
 function setArticleLeft() {
 	var w = $(window).width();
-	$(".article").css("left",(w-740)/2);
+	$(".article").css("left",(w-740)/2 + 40);
 }
 
 function showWechat() {
