@@ -64,7 +64,7 @@ function webWindow() {
 	$(".article").css({
 		'left': '',
 		'right': '',
-		'width': '650px'
+		'width': '740px'
 	});
 	$(".side_bar").css({
 		'display': 'block'
@@ -133,7 +133,7 @@ function hoverBar() {
 
 function setArticleLeft() {
 	var w = $(window).width();
-	$(".article").css("left",(w-650)/2);
+	$(".article").css("left",(w-740)/2);
 }
 
 function showWechat() {

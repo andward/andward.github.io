@@ -292,7 +292,7 @@ a:hover  {
   float: left;
   width: 40px;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .gap
 {
@@ -370,7 +370,7 @@ a:hover  {
 /* standard */
 .article
 {
-  width: 650px;
+  width: 740px;
   position: absolute;
   left: 400px;
 }
