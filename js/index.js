@@ -124,7 +124,7 @@ function hoverBar() {
 					width: 40
 				}, "fast");
 				$(".article").stop().animate({
-					left: left_distance + 40
+					left: left_distance
 				}, "fast");
 			});
 		});
@@ -133,7 +133,7 @@ function hoverBar() {
 
 function setArticleLeft() {
 	var w = $(window).width();
-	$(".article").css("left",(w-740)/2 + 40);
+	$(".article").css("left",(w-740)/2);
 }
 
 function showWechat() {
