@@ -11,14 +11,14 @@
 }
 
 @font-face {
-  font-family: Quicksand;
-  src: url("Quicksand-Regular.otf");
+  font-family: Roboto;
+  src: url("Roboto-Regular.ttf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: Quicksand-Bold;
-  src: url("Quicksand-Bold.otf");
+  font-family: Roboto-Bold;
+  src: url("Roboto-Bold.ttf");
   font-weight: bold;
 }
 
@@ -47,7 +47,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Quicksand, Helvetica, Arial, sans-serif;
+  font: 13.34px Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   font-size: small;
   text-align: center;
   margin: 0;
@@ -60,7 +61,7 @@ h3, h4, h5, h6 {
   color: #444; }
 
 h2 {
-  font-family: Quicksand-Bold, Helvetica, Arial, sans-serif;
+  font-family: Roboto-Bold, Helvetica, Arial, sans-serif;
   font-size: 18px;
   margin: 1em 0;
   color: #444;
@@ -68,13 +69,13 @@ h2 {
 }
 
 h3 {
-  font-family: Quicksand-Bold, Helvetica, Arial, sans-serif;
+  font-family: Roboto-Bold, Helvetica, Arial, sans-serif;
   margin: 10px 0;
   color: #444;
 }
 
 h1 {
-  font-family: Quicksand, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 
@@ -188,7 +189,7 @@ a:hover  {
   color: rgba(199, 68, 51, 0.8);
   font-size: 20px;
   font-weight: normal;
-  font-family: Quicksand, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-decoration: none;
 }
 
