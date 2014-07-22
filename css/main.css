@@ -49,6 +49,7 @@ body {
   background-color: #FFF;
   font: 13.34px Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: .5px;
   font-size: small;
   text-align: center;
   margin: 0;
