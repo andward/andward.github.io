@@ -78,7 +78,7 @@ h3 {
 
 h1 {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 125%;
   font-weight:normal;
 }
 
@@ -169,7 +169,6 @@ a:hover  {
   text-decoration: none;
   margin: 5em 0 1em 0;
   color:rgba(199, 68, 51, 0.8);
-  font-size: 23px;
 }
 
 .index_head{
