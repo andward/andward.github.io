@@ -71,7 +71,7 @@ h2 {
 
 h3 {
   font-family: Roboto-Bold, Helvetica, Arial, sans-serif;
-  margin: 10px 0;
+  margin: 2em 0 0;
   color: #444;
   font-weight:bold;
 }
@@ -380,7 +380,8 @@ a:hover  {
 .post pre {
   border: 1px solid #ddd;
   background-color: #f1f1f1;
-  padding: 0 .4em;
+  padding: 0.4em;
+  overflow-x: scroll; 
 }
 
 .post ul, .post ol {
