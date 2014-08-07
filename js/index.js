@@ -56,7 +56,7 @@ function mobileWindow() {
 		'display': 'none'
 	});
 	$("#home").css({
-		'margin': '0 5%'
+		'margin': '0 7% 0 3%'
 	});
 	$(".index_head").css({
 		'font-size': '30px'
