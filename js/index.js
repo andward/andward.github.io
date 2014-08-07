@@ -9,7 +9,6 @@ $(document).ready(function($) {
 
 resizeWindow();
 
-
 function resizeWindow() {
 	$(window).resize(function() {
 		changeWindowSize();
@@ -19,22 +18,22 @@ function resizeWindow() {
 function initWindow() {
 	changeWindowSize();
 	hoverBar();
-    randomBackgoundColor(".bg .auto_color");
+	randomBackgoundColor(".bg .auto_color");
 }
 
 function changeWindowSize() {
 	if ($(window).width() < 800) {
-			mobileWindow();
-			setMobilePanelWidth();
-			setMobilePanelHeight();
-			setDivSizeInBg();
-		} else {
-			webWindow();
-			setWebPanelWidth();
-			setWebPanelHeight();
-			setDivSizeInBg();
-			setArticleLeft();
-		}
+		mobileWindow();
+		setMobilePanelWidth();
+		setMobilePanelHeight();
+		setDivSizeInBg();
+	} else {
+		webWindow();
+		setWebPanelWidth();
+		setWebPanelHeight();
+		setDivSizeInBg();
+		setArticleLeft();
+	}
 }
 
 function mobileWindow() {
@@ -62,6 +61,12 @@ function mobileWindow() {
 	$(".index_head").css({
 		'font-size': '30px'
 	});
+	$(".posts").css({
+		'text-align': 'center'
+	});
+	$(".time").css({
+		'margin': '20px auto'
+	});
 }
 
 function webWindow() {
@@ -88,7 +93,14 @@ function webWindow() {
 	$(".index_head").css({
 		'font-size': '40px'
 	});
+	$(".posts").css({
+		'text-align': 'left'
+	});
+	$(".time").css({
+		'margin': '20px 15px'
+	});
 }
+
 
 function setWebPanelWidth() {
 	var width = window.screen.availWidth;
@@ -172,30 +184,32 @@ function showWechat() {
 function collectArticleByMouth() {
 	var current_year = '';
 	var current_month = '';
-	$(".bg").one('click', function() {
-		/* Act on the event */
-		$(".posts li").each(function() {
-			var date = $(this).find('span').html().split(" ");
-			var year = date[2];
-			var month = date[1] + " ";
-			var html = "<div class='time'>" + month + year + "</div>";
-			if (current_year === '') {
+	$(".posts li").each(function() {
+		var date = $(this).find('span').html().split(" ");
+		var year = date[2];
+		var month = date[1] + " ";
+		var html = "<div class='time'>" + month + year + "</div>";
+		if (current_year === '') {
+			$(this).before(html);
+			current_year = year;
+			current_month = month;
+		} else if (current_year === year) {
+			if (current_month != month) {
 				$(this).before(html);
-				current_year = year;
-				current_month = month;
-			} else if (current_year === year) {
-				if (current_month != month) {
-					$(this).before(html);
-					current_month = month;
-				}
-			} else {
-				$(this).before(html);
-				current_year = year;
 				current_month = month;
 			}
+		} else {
+			$(this).before(html);
+			current_year = year;
+			current_month = month;
+		}
+	});
+	$(".bg").one('click', function() {
+		/* Act on the event */
+		$(".time").css({
+			'display': 'block'
 		});
 		randomBackgoundColor(".time");
-		setPanelHeight();
 	});
 }
 
