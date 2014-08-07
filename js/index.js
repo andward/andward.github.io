@@ -12,32 +12,37 @@ resizeWindow();
 
 function resizeWindow() {
 	$(window).resize(function() {
-		if ($(window).width() < 800) {
-			mobileWindow();
-		} else {
-			webWindow();
-			setPanelWidth();
-			setPanelHeight();
-			setDivWidthInBg();
-			setArticleLeft();
-		}
+		changeWindowSize();
 	});
 }
 
 function initWindow() {
+	changeWindowSize();
+	hoverBar();
+    randomBackgoundColor(".bg .auto_color");
+}
+
+function changeWindowSize() {
 	if ($(window).width() < 800) {
-		mobileWindow();
-	} else {
-		setPanelWidth();
-		setPanelHeight();
-		setDivWidthInBg();
-		setArticleLeft();
-		randomBackgoundColor(".bg .auto_color");
-		hoverBar();
-	}
+			mobileWindow();
+			setMobilePanelWidth();
+			setMobilePanelHeight();
+			setDivSizeInBg();
+		} else {
+			webWindow();
+			setWebPanelWidth();
+			setWebPanelHeight();
+			setDivSizeInBg();
+			setArticleLeft();
+		}
 }
 
 function mobileWindow() {
+	$(".bg").css({
+		'left': '',
+		'top': '0',
+		'z-index': '1002'
+	});
 	$(".right_side").css({
 		'left': '0',
 		'right': '0',
@@ -45,18 +50,26 @@ function mobileWindow() {
 	});
 	$(".article").css({
 		'left': '2%',
-		'right': '',
-		'width': '95%'
+		'right': '2%',
+		'width': '96%'
 	});
 	$(".side_bar").css({
 		'display': 'none'
 	});
 	$("#home").css({
-		'margin':'0 5%'
+		'margin': '0 5%'
+	});
+	$(".index_head").css({
+		'font-size': '30px'
 	});
 }
 
 function webWindow() {
+	$(".bg").css({
+		'left': '0',
+		'top': '',
+		'z-index': '998'
+	});
 	$(".right_side").css({
 		'right': '0',
 		'left': ''
@@ -70,17 +83,25 @@ function webWindow() {
 		'display': 'block'
 	});
 	$("#home").css({
-		'margin':'0 15%'
+		'margin': '0 15%'
+	});
+	$(".index_head").css({
+		'font-size': '40px'
 	});
 }
 
-function setPanelWidth() {
+function setWebPanelWidth() {
 	var width = window.screen.availWidth;
 	$(".bg").width(2*width/5);
 	$(".right_side").width(3*width/5-10);
 }
 
-function setDivWidthInBg(){
+function setMobilePanelWidth() {
+	var width = $(window).width();
+	$(".bg").width(width);
+}
+
+function setDivSizeInBg() {
 	var width = $(".bg").width();
 	var height = $(".bg").height();
 	$(".bg .auto_color").css({
@@ -89,7 +110,7 @@ function setDivWidthInBg(){
 	});
 }
 
-function setPanelHeight() {
+function setWebPanelHeight() {
 	var height = window.screen.availHeight;
 	var content_height = $(document).height();
 	var tag_count = $(".tag_container").length;
@@ -100,6 +121,10 @@ function setPanelHeight() {
 	$(".tag_content").css("line-height",tag_height+"px");
 	$(".contact_content").css("line-height",tag_height+"px");
 	$(".right_side").height(content_height);
+}
+
+function setMobilePanelHeight() {
+	$(".bg").height("4em");
 }
 
 function hoverBar() {
