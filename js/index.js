@@ -1,8 +1,8 @@
 $(document).ready(function($) {
+	showFilteredPostByHoverTag();
 	initWindow();
 	showWechat();
 	collectArticleByMouth();
-	showFilteredPostByHoverTag();
 	randomColorInSideBar();
 	changeBgColorByScorll();
 });
@@ -64,6 +64,12 @@ function mobileWindow() {
 	$(".posts").css({
 		'text-align': 'center'
 	});
+	$(".posts li").css({
+		'border-bottom': '1px solid #f5f5f5'
+	});
+	$(".auto_color").css({
+		'display': 'none'
+	});
 	$(".time").css({
 		'margin': '20px auto'
 	});
@@ -95,6 +101,12 @@ function webWindow() {
 	});
 	$(".posts").css({
 		'text-align': 'left'
+	});
+	$(".posts li").css({
+		'border-bottom': ''
+	});
+	$(".auto_color").css({
+		'display': 'block'
 	});
 	$(".time").css({
 		'margin': '20px 15px'
@@ -206,13 +218,22 @@ function collectArticleByMouth() {
 	});
 	$(".bg").one('click', function() {
 		/* Act on the event */
-		$(".time").css({
+		var time = $(".time");
+		if ($(window).width() < 800) {
+			time.css({
+				'margin': '20px auto'
+			});
+		} else {
+			time.css({
+				'margin': '20px 15px'
+			});
+		}
+		time.css({
 			'display': 'block'
 		});
 		randomBackgoundColor(".time");
 	});
 }
-
 function showFilteredPostByHoverTag() {
 	$(".tag_content").hover(function() {
 			var tag = $(this).html();

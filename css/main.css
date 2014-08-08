@@ -27,7 +27,7 @@
   height: 100%;
   width: 50%; 
   cursor: pointer;
-  background-color: white;
+  background-color: rgba(199, 68, 51, 0.8);
 }
 
 .bg .auto_color{
