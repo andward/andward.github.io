@@ -162,12 +162,20 @@ a:hover  {
   height: 100%;
   line-height: 2em;
 }
+.top_bg {
+  position: absolute;
+  width: 100%;
+  background-color: #f5f5f5;
+  z-index: -1;
+  top: 0px;
+  height: 30em;
+}
 .head
 {
   text-align: center;
   text-decoration: none;
   margin: 5em 0 1em 0;
-  color:rgba(199, 68, 51, 0.8);
+  color:rgba(199, 68, 51, 1);
 }
 
 .index_head{
@@ -335,6 +343,7 @@ a:hover  {
   width: 0;
   height: 100%;
   color: #444;
+  border-right: 1px solid #f5f5f5;
 }
 .tag_post_list ul
 {
