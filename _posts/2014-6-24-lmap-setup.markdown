@@ -5,7 +5,7 @@ date: 2014-6-24 0:00
 categories: python django
 ---
 
-![image](http://andward-blog-picture.qiniudn.com/airplane.jpg)
+![image](http://andward-blog-picture.qiniudn.com/people_crossing.jpg)
 
 最近workstation备份把home目录清空了，于是重新配了一下Django，发现之前的设置什么的全部都忘光了-__-! 看来必须记一记才行，免得再要重配的时候东找西找。
 
