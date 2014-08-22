@@ -1,10 +1,13 @@
 $(document).ready(function($) {
+	// init blog page
 	showFilteredPostByHoverTag();
 	initWindow();
 	showWechat();
 	collectArticleByMouth();
 	randomColorInSideBar();
 	changeBgColorByScorll();
+	// init resume page
+	randomBackgoundColor(".demo1 .auto_color");
 });
 
 resizeWindow();
@@ -157,6 +160,9 @@ function hoverBar() {
 		$(".side_bar").stop().animate({
 			width: 150
 		}, "fast");
+		$(".side_bar").css(
+			"border-right", "1px solid #e5e5e5"
+		);
 		$(".article").stop().animate({
 			left: left_distance + 100
 		}, "fast");
@@ -172,6 +178,8 @@ function hoverBar() {
 				$(".side_bar").stop().animate({
 					width: 40
 				}, "fast");
+				$(".side_bar").css(
+					"border-right", "");
 				$(".article").stop().animate({
 					left: left_distance
 				}, "fast");
@@ -276,3 +284,4 @@ function changeBgColorByScorll() {
 		}
 	});
 }
+
