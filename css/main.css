@@ -10,6 +10,164 @@
   padding: 0;
 }
 
+/* Web CSS Style*/
+@media screen and (min-width : 740px){
+  .bg {
+    left: 0;
+    z-index: 998;
+    position: fixed;
+    height: 100%;
+    width: 41%; 
+    cursor: pointer;
+    background-color: white;
+  }
+  .right_side {
+    right: 0;
+    position: absolute;
+    width: 59%;
+    z-index: 1001;
+    background-color: white;
+  }
+  .article {
+    width: 740px;
+    left: 400px;
+    position: absolute;
+    z-index:-1;
+  }
+  .side_bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    background-color: white;
+    overflow: hidden;
+  }
+  #home {
+    margin: 0 15%;
+  }
+  .index_head {
+    font-size: 40px;
+    position:absolute;
+    top:45%;
+    height:40px;
+    margin-top:-12px;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  .posts {
+    text-align: left;
+    list-style-type: none;
+    margin:7em 0;
+  }
+  .posts li {
+    padding: 15px 15px;
+  }
+  .auto_color {
+    display: inline-block;
+    float: left;
+    opacity:0.5;
+    width: 33%;
+    height: 20%;
+  }
+  .time {
+    margin: 20px 15px;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0.5;
+    display: none;
+  }
+  .site {
+    font-size: 125%;
+    width: 100%;
+    height: 100%;
+    line-height: 2em;
+}
+}
+
+/* Mobile CSS Style*/
+@media screen and (max-width : 740px){
+  .bg {
+    top: 0;
+    z-index: 1002;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    cursor: pointer;
+    background-color: rgba(199, 68, 51, 0.8);
+  }
+  .right_side {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1001;
+    background-color: white;
+  }
+  .article {
+    left: 2%;
+    right: 2%;
+    width: 96%;
+    position: absolute;
+  }
+  .side_bar {
+    display: none;
+  }
+  #home {
+    margin: 0 5%;
+  }
+  .index_head {
+    font-size: 30px;
+    position:absolute;
+    top:45%;
+    height:40px;
+    margin-top:-12px;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  .posts {
+    text-align: center;
+    list-style-type: none;
+    margin:7em 0;
+  }
+  .posts li {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 15px;
+  }
+  .auto_color {
+    display: none;
+  }
+  .time {
+    margin: 20px auto;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0.5;
+    display: none;
+  }
+  .site {
+    font-size: 125%;
+    width: 100%;
+    height: 100%;
+    line-height: 1.7em;
+  }
+}
+
 @font-face {
   font-family: Roboto;
   src: url("Roboto-Regular.ttf");
@@ -20,22 +178,6 @@
   font-family: Roboto-Bold;
   src: url("Roboto-Bold.ttf");
   font-weight: bold;
-}
-
-.bg {
-  position: fixed;
-  height: 100%;
-  width: 50%; 
-  cursor: pointer;
-  background-color: rgba(199, 68, 51, 0.8);
-}
-
-.auto_color{
-  display: inline-block;
-  float: left;
-  width: 230px;
-  height: 230px;
-  opacity:0.5;
 }
 
 .auto_color:hover
@@ -107,47 +249,11 @@ a:hover  {
 /* Home
 /*
 /*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin:7em 0;
-}
-
-.posts li {
-  padding: 15px 15px;
-}
 
 .posts span {
   color: #aaa;
   font-size: 80%;
   display: block;
-}
-
-.right_side
-{
-  position: absolute;
-  right: 0;
-  width: 50%;
-  z-index: 1001;
-  background-color: white;
-}
-#home
-{
-  margin: 0  15%;
-}
-.time
-{
-  margin: 20px 15px;
-  color: white;
-  font-size: 15px;
-  width: 80px;
-  height: 80px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d5d5d5;
-  line-height: 80px;
-  text-align: center;
-  opacity: 0.5;
-  display: none;
 }
 
 /*****************************************************************************/
@@ -156,12 +262,6 @@ a:hover  {
 /*
 /*****************************************************************************/
 
-.site {
-  font-size: 125%;
-  width: 100%;
-  height: 100%;
-  line-height: 1.7em;
-}
 .top_bg {
   position: absolute;
   width: 100%;
@@ -178,16 +278,6 @@ a:hover  {
   color:rgba(199, 68, 51, 1);
 }
 
-.index_head{
-  position:absolute;
-  top:45%;
-  height:40px;
-  margin-top:-12px;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  width: 100%;
-}
 .title {
   display: inline-block;
   margin: 5em 15px 0;
@@ -251,15 +341,6 @@ a:hover  {
 {
   position: fixed;
   height: 100%;
-}
-.side_bar
-{
-  position: fixed;
-  left: 0;
-  height: 100%;
-  width: 40px;
-  background-color: white;
-  overflow: hidden;
 }
 
 .share_button
@@ -342,6 +423,7 @@ a:hover  {
   width: 0;
   height: 100%;
   color: #444;
+  z-index: 1003;
 }
 .tag_post_list ul
 {
@@ -376,12 +458,6 @@ a:hover  {
 /*****************************************************************************/
 
 /* standard */
-.article
-{
-  width: 740px;
-  position: absolute;
-  left: 400px;
-}
 
 .post pre {
   border: 1px solid #ddd;
