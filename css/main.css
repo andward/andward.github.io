@@ -39,7 +39,7 @@
     position: fixed;
     left: 0;
     height: 100%;
-    width: 40px;
+    width: 10px;
     background-color: white;
     overflow: hidden;
   }
@@ -341,6 +341,7 @@ a:hover  {
 {
   position: fixed;
   height: 100%;
+  width: 150px;
 }
 
 .share_button

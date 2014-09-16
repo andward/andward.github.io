@@ -89,7 +89,7 @@ var pageInit = {
 					left: 40
 				}, "fast", function() {
 					pageInit.config.navBar.stop().animate({
-						width: 40
+						width: 10
 					}, "fast");
 					pageInit.config.navBar.css(
 						"border-right", "");
