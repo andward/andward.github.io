@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Separate out mysql server in Django
+title: Separate Out MySQL Server In Django
 date: 2014-01-01 18:52:20
 categories: Django MySQL
 ---

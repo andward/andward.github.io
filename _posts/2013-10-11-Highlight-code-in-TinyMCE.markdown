@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Highlight code in TinyMCE
+title: Highlight Code In TinyMCE
 date: 2013-10-11 10:00:00
 category: Opensource
 ---

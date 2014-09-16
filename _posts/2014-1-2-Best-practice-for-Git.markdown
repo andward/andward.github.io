@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Best practice for Git
+title: Best Practice For Git
 date: 2014-01-02 18:52:20
 categories: CI git Gerrit
 ---

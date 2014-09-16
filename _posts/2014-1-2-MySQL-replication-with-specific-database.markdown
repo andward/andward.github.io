@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL replication with specific database
+title: MySQL Replication With Specific Database
 date: 2014-01-02 18:52:20
 categories: Django MySQL
 ---

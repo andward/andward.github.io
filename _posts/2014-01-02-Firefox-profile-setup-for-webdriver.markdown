@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Firefox profile setup for webdriver
+title: Firefox Profile Setup For Webdriver
 date: 2014-01-02 18:52:20
 category: Test
 ---

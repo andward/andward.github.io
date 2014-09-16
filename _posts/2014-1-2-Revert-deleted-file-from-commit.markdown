@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revert deleted file from commit
+title: Revert Deleted File From Commit
 date: 2014-01-02 9:52:23
 categories: CI git
 ---
