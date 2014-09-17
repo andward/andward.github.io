@@ -113,9 +113,9 @@
     background-color: white;
   }
   .article {
-    left: 2%;
-    right: 2%;
-    width: 96%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
     position: absolute;
   }
   .side_bar {
