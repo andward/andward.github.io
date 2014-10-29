@@ -3,9 +3,8 @@ layout: post
 title: Firefox Profile Setup For Webdriver
 date: 2014-01-02 18:52:20
 category: Test
+image: http://andward-blog-picture.qiniudn.com/girl.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/girl.jpg)
 
 In webdriver test for Firefox, we can setup multiple profile to handle some requirement (eg:login with cookies)
 

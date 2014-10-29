@@ -3,9 +3,8 @@ layout: post
 title: 也说面试
 date: 2014-04-27 20:20:20
 categories: 面试
+image: http://andward-blog-picture.qiniudn.com/sky.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/interview.jpg)
 
 最近我进行了人生中的第一次面试（面试别人）。来讲讲面试的感受。。
 

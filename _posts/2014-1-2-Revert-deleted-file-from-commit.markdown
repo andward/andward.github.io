@@ -3,9 +3,9 @@ layout: post
 title: Revert Deleted File From Commit
 date: 2014-01-02 9:52:23
 categories: CI git
+image: http://andward-blog-picture.qiniudn.com/taxi.jpg
 ---
 
-![image](http://andward-blog-picture.qiniudn.com/blizzard.jpg)
 
 Some day you use 'git rm file' to delete some files in your local repository and commit this change. To recover these removed files, you can do:
 

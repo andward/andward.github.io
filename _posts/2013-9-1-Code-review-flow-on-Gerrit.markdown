@@ -3,9 +3,8 @@ layout: post
 title: Code Review Flow On Gerrit
 date: 2013-09-01 9:52:23
 categories: CI git Gerrit Jenkins
+image: http://andward-blog-picture.qiniudn.com/dart_night.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/girl1.jpg)
 
 ##Preparation
 

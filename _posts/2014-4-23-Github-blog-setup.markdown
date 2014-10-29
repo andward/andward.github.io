@@ -3,9 +3,8 @@ layout: post
 title: 建立个人的Github Page
 date: 2014-4-23 6:00:00
 categories: github git
+image: http://andward-blog-picture.qiniudn.com/sunrise.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/beautiful_girl.jpg)
 
 很久以前（其实也不是很久啦），如果想建立一个个人的blog,一般的做法是：要么在sina，csdn等一些公共站点注册一个blog，所有的资源都由这个公共站点host；要么自己搭建一个站点和申请独立的域名，资源都放在本地。如果有精力的话，自己搭建一个独立blog还是挺好玩儿的。
 

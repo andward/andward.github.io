@@ -3,9 +3,8 @@ layout: post
 title: Best Practice For Git
 date: 2014-01-02 18:52:20
 categories: CI git Gerrit
+image: http://andward-blog-picture.qiniudn.com/rain.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/bkbridge.jpg)
 
 ###Fix master bug on master branch
 

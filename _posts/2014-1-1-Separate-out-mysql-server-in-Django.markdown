@@ -3,9 +3,8 @@ layout: post
 title: Separate Out MySQL Server In Django
 date: 2014-01-01 18:52:20
 categories: Django MySQL
+image: http://andward-blog-picture.qiniudn.com/people_crossing.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/stories.jpg)
 
 Separating out database server and Web server can increase resource efficiency. Server will not fight for resource using. Here we use mysql server to demo..
 

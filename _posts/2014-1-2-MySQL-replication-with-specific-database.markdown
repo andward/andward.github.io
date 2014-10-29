@@ -3,9 +3,8 @@ layout: post
 title: MySQL Replication With Specific Database
 date: 2014-01-02 18:52:20
 categories: Django MySQL
+image: http://andward-blog-picture.qiniudn.com/stories.jpg
 ---
-
-![image](http://andward-blog-picture.qiniudn.com/alaskabus.jpg)
 
 {% highlight python %}
 #replicate this database 
