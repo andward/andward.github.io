@@ -3,6 +3,7 @@ layout: post
 title: 夏威夷。游记
 date: 2014-4-25 0:00:00
 categories: 旅行
+image: http://andward-blog-picture.qiniudn.com/mmexport1414571646974.jpg
 ---
 
 一提夏威夷，便勾起了我去年冬天的回忆。 阳光，沙滩，摇曳的棕榈，历历在目。那种轻松，愉悦的空气，让我对这群小岛念念不忘。这里便记录一下那些天的行程，也给想去的的朋友们一个参考。
