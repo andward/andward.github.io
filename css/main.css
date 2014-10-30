@@ -29,6 +29,7 @@
   max-height: 30em;
   overflow: hidden;
   position: absolute;
+  line-height: 0px;
   }
   .right_side {
     right: 0;
@@ -134,6 +135,7 @@
   max-height: 10em;
   overflow: hidden;
   position: absolute;
+  line-height: 0px;
   }
   .right_side {
     left: 0;
