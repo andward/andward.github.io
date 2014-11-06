@@ -11,7 +11,8 @@ var pageInit = {
 			articleWidth: $(".article").width(),
 			tagList: $(".tag_post_list"),
 			tagListUl: $(".tag_post_list ul"),
-			posts: $(".posts")
+			posts: $(".posts"),
+			blockBg: $(".block_bg")
 		};
 
 		$.extend(pageInit, settings);
@@ -27,7 +28,7 @@ var pageInit = {
 	changeWindowSize: function() {
 		if (pageInit.config.windowWidth > pageInit.config.articleWidth) {
 			pageInit.setWebPanelHeight();
-			pageInit.setArticleLeft();
+			//pageInit.setArticleLeft();
 			//pageInit.setBgBlockSize(); 
 		}
 	},
@@ -76,12 +77,17 @@ var pageInit = {
 			pageInit.config.navBar.css(
 				"border-right", "1px solid #e5e5e5"
 			);
+			pageInit.config.blockBg.fadeIn("fast");
 			pageInit.config.article.stop().animate({
-				left: left_distance + 100
+				"margin-left": left_distance + 100,
+				"margin-right": left_distance - 100
 			}, "fast");
 			pageInit.config.tagList.css("left", "151px");
 		}, function() {
-			pageInit.config.tagListUl.css("display", "none");
+			pageInit.config.tagListUl.css(
+				"display", "none"
+				);
+			pageInit.config.blockBg.fadeOut("fast");
 			pageInit.config.tagList.stop().animate({
 				width: 0
 			}, "fast", function() {
@@ -94,7 +100,8 @@ var pageInit = {
 					pageInit.config.navBar.css(
 						"border-right", "");
 					pageInit.config.article.stop().animate({
-						left: left_distance
+						"margin-left": left_distance,
+						"margin-right": left_distance
 					}, "fast");
 				});
 			});

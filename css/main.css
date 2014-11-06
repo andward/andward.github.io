@@ -23,12 +23,12 @@
   }
   .top_bg {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #b1b1b1;
   z-index: -1;
   top: 0px;
   max-height: 30em;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   line-height: 0px;
   }
   .right_side {
@@ -40,10 +40,8 @@
   }
   .article {
     width: 740px;
-    left: 400px;
-    top: 30em;
-    position: absolute;
-    z-index:-1;
+    margin: 0 auto;
+    position: relative;
   }
   .side_bar {
     display: block;
@@ -105,7 +103,7 @@
   .head
   {
   text-decoration: none;
-  margin: 5em 0 1em 0;
+  padding: 5em 0 1em 0;
   color:rgba(199, 68, 51, 1);
   line-height: 1.5em;
   }
@@ -129,12 +127,12 @@
   }
   .top_bg {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #b1b1b1;
   z-index: -1;
   top: 0px;
   max-height: 10em;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   line-height: 0px;
   }
   .right_side {
@@ -149,7 +147,6 @@
     left: 3%;
     right: 3%;
     width: 94%;
-    top:10em;
     position: absolute;
   }
   .side_bar {
@@ -203,7 +200,7 @@
   .head
   {
   text-decoration: none;
-  margin: 2em 0 1em 0;
+  padding: 2em 0 1em 0;
   color:rgba(199, 68, 51, 1);
   line-height: 1.5em;
   }
@@ -302,6 +299,22 @@ a:hover  {
 /*
 /*****************************************************************************/
 
+.article_area {
+  position: relative;
+  background: white;
+  margin-top: 30em;
+}
+.block_bg {
+  display: none;
+  background: #b1b1b1;
+  z-index: 500;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .top_bg img{
   width: 100%;
@@ -335,7 +348,8 @@ a:hover  {
 
 .meta {
   color: rgba(0,0,0,0.5);
-  margin: 3em 0;
+  margin: 0;
+  padding: 0 0 3em;
 }
 
 .footer {
@@ -371,6 +385,8 @@ a:hover  {
   position: fixed;
   height: 100%;
   width: 150px;
+  z-index: 1000;
+  top: 0px;
 }
 
 .share_button
