@@ -21,6 +21,11 @@
     cursor: pointer;
     background-color: white;
   }
+  .article_area {
+  position: relative;
+  background: white;
+  margin-top: 30em;
+  }
   .top_bg {
   width: 100%;
   background-color: #b1b1b1;
@@ -42,6 +47,14 @@
     width: 740px;
     margin: 0 auto;
     position: relative;
+  }
+  .fun_bar
+  {
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    z-index: 1000;
+    top: 0px;
   }
   .side_bar {
     display: block;
@@ -125,6 +138,11 @@
     cursor: pointer;
     background-color: rgba(199, 68, 51, 0.8);
   }
+  .article_area {
+  position: relative;
+  background: white;
+  margin-top: 10em;
+  }
   .top_bg {
   width: 100%;
   background-color: #b1b1b1;
@@ -144,10 +162,12 @@
     background-color: white;
   }
   .article {
-    left: 3%;
-    right: 3%;
+    margin:0 auto;
     width: 94%;
-    position: absolute;
+  }
+  .fun_bar
+  {
+    display: none;
   }
   .side_bar {
     display: none;
@@ -299,11 +319,7 @@ a:hover  {
 /*
 /*****************************************************************************/
 
-.article_area {
-  position: relative;
-  background: white;
-  margin-top: 30em;
-}
+
 .block_bg {
   display: none;
   background: #b1b1b1;
@@ -379,14 +395,6 @@ a:hover  {
 
 .footer .rss img {
   border: 0;
-}
-.fun_bar
-{
-  position: fixed;
-  height: 100%;
-  width: 150px;
-  z-index: 1000;
-  top: 0px;
 }
 
 .share_button
