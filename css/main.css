@@ -253,7 +253,6 @@ html, body { height: 100%; }
 body {
   background-color: #FFF;
   font: 13.34px Roboto, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   letter-spacing: .5px;
   font-size: small;
   margin: 0;
@@ -282,7 +281,7 @@ h3 {
 
 p { 
   margin: 2em 0;
-  color: #333;
+  color: #2f2f2f;
  }
 
 p img{
