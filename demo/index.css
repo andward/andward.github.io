@@ -1,0 +1,19 @@
+/* main css*/
+@font-face {
+	font-family: Hans;
+	src: url("/css/NotoSansHans-Light.otf");
+}
+body{
+	background: #efefee;
+	margin: 0;
+	padding: 0;
+	font-family: Hans, "微软雅黑", Arial, sans-serif;
+}
+.mainbody{
+	width: 100%;
+	height: auto;
+}
+.index {
+	background: url("http://andward-blog-picture.qiniudn.com/dart_night.jpg") no-repeat center center;
+	background-size: cover;
+}
