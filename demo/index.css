@@ -16,4 +16,74 @@ body{
 .index {
 	background: url("http://andward-blog-picture.qiniudn.com/dart_night.jpg") no-repeat center center;
 	background-size: cover;
+	opacity: 0.7;
+	text-align: center;
+	color: white;
+	font-size: 50px;
 }
+.painting {
+	background: url("http://andward-blog-picture.qiniudn.com/927e0e135.jpg") no-repeat;
+    background-size: cover;
+    -webkit-filter: saturate(0.7);
+}
+.painting_text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 35%;
+	background: white;
+}
+.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+	font-size: 40px;
+}
+.abstract {
+	-webkit-filter: saturate(0.7);
+	background: url("http://andward-blog-picture.qiniudn.com/108126915.jpg") no-repeat center left;
+}
+.abstract_text {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 65%;
+	background: white;
+}
+.footer {
+	height: 55%;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	background: white;
+}
+.footer img {
+	position: absolute;
+	right: 25%;
+	left: 25%;
+	width: 50%;
+	top: -50%;
+	z-index: -1;
+}
+.about {
+	position: absolute;
+	left: 25%;
+	padding: 50px 0;
+}
+.contact {
+	position: absolute;
+	right: 25%;
+	padding: 50px 0;
+}
+
+
+
+
+
