@@ -65,6 +65,9 @@
 	font-weight: bold;
 	cursor: pointer;
 }
+.demo2_go_button:hover {
+	opacity: 0.7;
+}
 .demo2_product {
 	background-color: #f5f5f5;
 	min-height: 100%;
