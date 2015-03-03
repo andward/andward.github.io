@@ -1,0 +1,147 @@
+.demo2_index {
+	background-size: cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f5f5f5;
+    min-height: 100%;
+}
+.demo2_index_container {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	height:500px;
+	width:500px;
+}
+.demo2_logo {
+	width: 100%;
+	height: 380px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.demo2_logo1 {
+	position: absolute;
+	height: 100%;
+	width: 60%;
+	border: 1px solid #999;
+	top: 0;
+	left: 0;
+}
+.demo2_logo2 {
+	position: absolute;
+	width: 35%;
+	height: 55%;
+	top: 0;
+	right: 0;
+	background-color: white;
+}
+.demo2_logo3 {
+	position: absolute;
+	width: 35%;
+	height: 40%;
+	bottom: -2px;
+	right: 0;
+	background-color: #d5d5d5;
+}
+.demo2_intro {
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	color: #333;
+}
+.demo2_go_button {
+	width: 30%;
+	margin: 0 auto;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: red;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.demo2_product {
+	background-color: #f5f5f5;
+	min-height: 100%;
+	width: 100%;
+}
+.demo2_nav {
+	top: 0%;
+	width: 100%;
+	height: 90px;
+	background-color: white;
+}
+.demo2_nav_container {
+	width: 900px;
+	margin:0 auto;
+}
+.demo2_nav_logo {
+	float: left
+}
+.demo2_nav_container ul {
+	float: right;
+	width: 500px;
+}
+.demo2_nav_container ul li {
+	float: left;
+	list-style: none;
+	width: 100px;
+	line-height: 90px;
+}
+.demo2_prod_list {
+	width: 900px;
+	margin: 50px auto 0;
+
+}
+.demo2_category{
+	line-height: 180px;
+	text-align: center;
+	font-size: 25px;
+}
+.demo2_pointer {
+	position: absolute;
+	top: 0;
+	right: -10px;
+	bottom: 0;
+	margin: auto;
+	height: 20px;
+	width: 20px;
+	background-color: white;
+	transform: rotate(45deg);
+}
+.demo2_prod {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin: 0 20px 20px 0;
+	width: 180px;
+	height: 180px;
+	background-color: white;
+	padding: 10px;
+}
+.demo2_prod img {
+	height: 180px;
+	width: 180px;
+}
+.demo2_prod .demo2_prod_desc {
+	display: none;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: white;
+	text-align: center;
+	line-height: 200px;
+	opacity: 0.8;
+}
+.demo2_prod:hover > .demo2_prod_desc {
+	display:block;
+}
+
