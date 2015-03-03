@@ -30,6 +30,15 @@
 	top: 0;
 	left: 0;
 }
+.demo2_logo1 img {
+    position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	bottom: 0;
+	margin: auto;
+	width: 90%;
+}
 .demo2_logo2 {
 	position: absolute;
 	width: 35%;
@@ -37,6 +46,15 @@
 	top: 0;
 	right: 0;
 	background-color: white;
+}
+.demo2_logo2 img {
+    position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	margin: auto;
+	height: 90%;
 }
 .demo2_logo3 {
 	position: absolute;
@@ -64,6 +82,7 @@
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
+	background: url("http://andward-blog-picture.qiniudn.com/go-bg1.png") no-repeat center center;
 }
 .demo2_go_button:hover {
 	opacity: 0.7;
@@ -84,7 +103,19 @@
 	margin:0 auto;
 }
 .demo2_nav_logo {
-	float: left
+	float: left;
+	height: 90px;
+	width: 100px;
+	position: relative;
+}
+.demo2_nav_logo img {
+    position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	margin: auto;
+	height: 90%;
 }
 .demo2_nav_container ul {
 	float: right;
