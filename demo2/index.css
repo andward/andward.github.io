@@ -27,7 +27,7 @@
 	position: absolute;
 	height: 100%;
 	width: 60%;
-	border: 1px solid #999;
+	border: 2px solid #999;
 	top: 0;
 	left: 0;
 	background: #ececec;
@@ -47,15 +47,20 @@
 	height: 55%;
 	top: 0;
 	right: 0;
-	border: 1px solid #999;
+	border: 2px solid #999;
 	background: #ececec;
 
 }
 .demo2_logo2 div {
-	margin: 8%;
+	margin: auto;
 	background: white;
-	height: 86%;
-	position: relative;
+	height: 85%;
+	width: 85%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .demo2_logo2 img {
     position: absolute;
@@ -71,16 +76,22 @@
 	position: absolute;
 	width: 35%;
 	height: 40%;
-	bottom: -2px;
+	bottom: -4px;
 	right: 0;
-	border: 1px solid #999;
+	border: 2px solid #999;
 	background: #ececec;
 
 }
 .demo2_logo3 div {
-	margin: 8%;
-	background: #c5c5c5;
-	height: 82%;
+	margin: auto;
+	background: #898989;
+	height: 85%;
+	width: 85%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .demo2_intro {
 	width: 100%;
