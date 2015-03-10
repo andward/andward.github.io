@@ -18,12 +18,13 @@
 		background-size: 500px 500px;
 	}
 	.demo2_go_button {
-		font-size: 18px;
-		width: 30%;
+		letter-spacing: 5px;
+		font-size: 20px;
+		width: 40%;
 		margin: 0 auto;
-		height: 60px;
+		height: 50px;
 		text-align: center;
-		line-height: 60px;
+		line-height: 50px;
 		background: red;
 		color: white;
 		font-weight: bold;
@@ -52,11 +53,12 @@
 		background-size: 400px 400px;
 	}
 	.demo2_go_button {
-		width: 30%;
+		letter-spacing: 5px;
+		width: 40%;
 		margin: 0 auto;
-		height: 50px;
+		height: 40px;
 		text-align: center;
-		line-height: 50px;
+		line-height: 40px;
 		background: red;
 		color: white;
 		font-weight: bold;
