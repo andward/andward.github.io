@@ -18,7 +18,7 @@ git clone https://github.com/andward/AndwardTODO.git
 
 ###下载依赖包
 
-项目clone下来后，cd进入项目文件夹。执行命令你需要先装一个pyhton的工具pip，基本上python所有的主流依赖包都在其pypi的服务器上面。执行以下命令：
+项目clone下来后，cd进入项目文件夹。如果你没有用过python的话，那么需要先装一个pyhton的工具pip，基本上python所有的主流依赖包都在其pypi的服务器上面。执行以下命令：
 
 {% highlight ruby %}
 pip install -r requirements.txt
