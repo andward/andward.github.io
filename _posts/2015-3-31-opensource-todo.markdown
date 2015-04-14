@@ -24,7 +24,7 @@ git clone https://github.com/andward/AndwardTODO.git
 pip install -r requirements.txt
 {% endhighlight %}
 
-跑完后django等依赖包已经安装在你的电脑上，版本是1.4.5。可以测试一下：
+跑完后django等依赖包已经安装在你的电脑上，版本是1.5.5。可以测试一下：
 
 {% highlight ruby %}
 >>python
