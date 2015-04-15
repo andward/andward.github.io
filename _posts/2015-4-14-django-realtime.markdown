@@ -3,7 +3,7 @@ layout: post
 title: Django集成socketio
 date: 2015-4-13 0:00
 categories: python django socketio
-image: http://andward-blog-picture.qiniudn.com/red_forest.jpeg
+image: http://andward-blog-picture.qiniudn.com/red_forest.jpeg?imageView/2/w/1400/h/720
 ---
 
 最近想在TODO项目（django）上加一个实时更新TODO动态的功能，这样感觉更酷炫。。查阅了一下一般有以下解决方案：
